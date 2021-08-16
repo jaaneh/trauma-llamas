@@ -1,7 +1,11 @@
 [
   {
     "title": "What is Trauma Llamas?",
-    "content": "<p>Trauma Llamas is a collection of 5,555 unique and custom generated Llamas.</p>"
+    "content": "<p>Trauma Llamas is a collection of 8,888 unique and custom generated llamas living on the Ethereum blockchain.</p>"
+  },
+  {
+    "title": "When does the sale go live?",
+    "content": "<p>We have a provisional date in place, but this may change. Stay connected with us via <a href='https://twitter.com/TraumaLlamas' rel='noopener noreferrer' target='_blank'>Twitter</a> and <a href='/' rel='noopener noreferrer' target='_blank'>Discord</a> for further updates on launch date and time.</p>"
   },
   {
     "title": "How do I purchase a Trauma Llama?",
@@ -13,7 +17,7 @@
   },
   {
     "title": "Where are the images stored?",
-    "content": "<p></p>"
+    "content": "<p>All images are hosted through IPFS with additional pinning through Pinata.</p>"
   },
   {
     "title": "Why should I mint one?",
@@ -21,7 +25,7 @@
   },
   {
     "title": "How many Trauma Llamas are there?",
-    "content": "<p>There will only ever be 5,555 Trauma Llamas minted. That's the max supply.</p>"
+    "content": "<p>There will only ever be 8,888 Trauma Llamas minted. That's the max supply.</p>"
   },
   {
     "title": "Will you host any giveaways?",

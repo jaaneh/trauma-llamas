@@ -16,10 +16,6 @@ const Header = (): JSX.Element => {
       href: '/'
     },
     {
-      title: 'Attributes',
-      href: '/attributes'
-    },
-    {
       title: 'Roadmap',
       href: '/roadmap'
     },

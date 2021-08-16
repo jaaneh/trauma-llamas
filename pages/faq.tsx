@@ -15,7 +15,7 @@ const FAQPage = (): JSX.Element => {
             className='max-w-full border shadow border-tl-divider collapse rounded-xl collapse-arrow'
           >
             <input type='checkbox' />
-            <div className='flex items-center pr-10 font-medium text-md collapse-title'>
+            <div className='flex items-center pr-10 font-medium tracking-tight text-md collapse-title'>
               {question.title}
             </div>
             <div className='prose-sm collapse-content'>

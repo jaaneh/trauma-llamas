@@ -1,6 +1,8 @@
 import * as React from 'react'
+import Link from 'next/link'
 
 import FadeInWhenVisible from '@components/FadeInWhenVisible'
+import Button from '@components/Button'
 
 import welcomeKit from '@content/welcome_kit.json'
 
@@ -10,18 +12,22 @@ const HomePage = (): JSX.Element => {
       <div
         className='min-h-[50vh] hero'
         style={{
-          backgroundImage: 'url(llama_3.png)'
+          backgroundImage: 'url(banner.png)'
         }}
       >
-        <div className='hero-overlay bg-opacity-60'></div>
+        <div className='bg-opacity-20 hero-overlay bg-gradient-to-t from-neutral-focus'></div>
         <div className='text-center hero-content text-neutral-content'>
           <div className='max-w-md'>
-            <h1 className='mb-5 text-5xl font-bold'>Trauma Llamas</h1>
-            <p className='mb-5'>
+            <h1 className='mb-4 text-5xl font-bold'>Trauma Llamas</h1>
+            {/* <p className='mb-5'>
               Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
               exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.
-            </p>
-            <button className='btn btn-info'>Get Started</button>
+            </p> */}
+            <Link href='/roadmap'>
+              <Button variant='primary' isActive className='rounded-full'>
+                Learn More
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
