@@ -3,6 +3,7 @@ import { useWeb3React } from '@web3-react/core'
 import { providers, ethers, BigNumberish } from 'ethers'
 
 import Header from '@components/Header'
+// import Header from '@components/Header'
 import Footer from '@components/Footer'
 import MintContext from '@context/MintContext'
 

@@ -5,14 +5,18 @@ import Link from 'next/link'
 type IProps = {
   href: string
   children: React.ReactNode
+  onClick?: React.MouseEventHandler<HTMLAnchorElement>
 }
 
-const ActiveLink = ({ href, children }: IProps): JSX.Element => {
+const ActiveLink = ({ children, onClick, href }: IProps): JSX.Element => {
   const router = useRouter()
 
   return (
     <Link href={href}>
-      <a className={router.pathname === href ? 'text-yellow-200' : 'text-gray-200'}>
+      <a
+        onClick={onClick}
+        className={router.pathname === href ? 'text-yellow-200' : 'text-gray-200'}
+      >
         {children}
       </a>
     </Link>
