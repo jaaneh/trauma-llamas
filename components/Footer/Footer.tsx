@@ -12,12 +12,12 @@ const Footer = (): JSX.Element => {
     <>
       {!isMintPage && (
         <div
-          className='min-h-[200px] hero'
+          className='min-h-[30vh] hero'
           style={{
             backgroundImage: 'url(banner.png)'
           }}
         >
-          <div className='bg-opacity-60 hero-overlay bg-gradient-to-b from-neutral-focus'></div>
+          <div className='bg-opacity-60 hero-overlay bg-gradient-to-b from-neutral-focus h-[30vh]'></div>
           <div className='hero-content'>
             <div data-tip='Coming Soon' className='tooltip'>
               {/* <Link href='/mint'> */}

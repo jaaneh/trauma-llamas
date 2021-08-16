@@ -10,12 +10,12 @@ const HomePage = (): JSX.Element => {
   return (
     <div className='flex flex-col items-center justify-center w-full'>
       <div
-        className='min-h-[425px] hero'
+        className='min-h-[50vh] hero'
         style={{
           backgroundImage: 'url(banner.png)'
         }}
       >
-        <div className='bg-opacity-20 hero-overlay bg-gradient-to-t from-neutral-focus'></div>
+        <div className='bg-opacity-20 hero-overlay bg-gradient-to-t from-neutral-focus h-[50vh]'></div>
         <div className='text-center hero-content text-neutral-content'>
           <div className='max-w-md'>
             <h1 className='mb-4 text-5xl font-bold'>Trauma Llamas</h1>
