@@ -1,0 +1,115 @@
+[
+  {
+    "percentage": "Launch",
+    "content": [
+      {
+        "title": "100 Discord OG's",
+        "text": "First 100 members of our Discord server recieves an OG role, with access to future giveaways and more!"
+      },
+      {
+        "title": "Holder Discord role",
+        "text": "Anyone who holds a Trauma Llama will get access to custom Discord channels where we will hold future giveaways for Llama holders"
+      },
+      {
+        "title": "Llama Merch",
+        "text": "We will open a public merch store for anyone to purchase desired wearables"
+      }
+    ]
+  },
+  {
+    "percentage": "25% sold",
+    "content": [
+      {
+        "title": "Donation",
+        "text": "Donate $3,125 to NidderDale Llamas"
+      },
+      {
+        "title": "Donation",
+        "text": "Donate $3,125 to AFSP"
+      },
+      {
+        "title": "Llama raffle",
+        "text": "Anyone who minted between #1-1250 are automatically entered into a free Trauma Llama raffle"
+      }
+    ]
+  },
+  {
+    "percentage": "50% sold",
+    "content": [
+      {
+        "title": "Donation",
+        "text": "Donate $3,125 to NidderDale Llamas"
+      },
+      {
+        "title": "Donation",
+        "text": "Donate $3,125 to AFSP"
+      },
+      {
+        "title": "Llama Gallery",
+        "text": "Start planning development of Trauma Llamas holder only area on our website. View all llamas currently in your wallet along with their traits and stats"
+      },
+      {
+        "title": "Llama raffle",
+        "text": "Anyone who minted between #1251-2500 are automatically entered into a free Trauma Llama raffle"
+      }
+    ]
+  },
+  {
+    "percentage": "75% sold",
+    "content": [
+      {
+        "title": "Donation",
+        "text": "Donate $3,125 to NidderDale Llamas"
+      },
+      {
+        "title": "Donation",
+        "text": "Donate $3,125 to AFSP"
+      },
+      {
+        "title": "$30k Community Wallet",
+        "text": "$30,000 is added to a community wallet. To be used for giveaways and other competitions. Stay tuned"
+      },
+      {
+        "title": "Liquidity Pool",
+        "text": "We will look at opening a liquidity pool for your Trauma Llamas on https://nft20.io/"
+      },
+      {
+        "title": "Llama Gallery",
+        "text": "Start planning development of an interactive and sortable gallery of all Trauma Llamas"
+      },
+      {
+        "title": "Llama raffle",
+        "text": "Anyone who minted between #2501-3500 are automatically entered into a free Trauma Llama raffle"
+      }
+    ]
+  },
+  {
+    "percentage": "100% sold",
+    "content": [
+      {
+        "title": "Donation",
+        "text": "Donate $3,125 to NidderDale Llamas"
+      },
+      {
+        "title": "Donation",
+        "text": "Donate $3,125 to AFSP"
+      },
+      {
+        "title": "1 of 1 auctions",
+        "text": "Special 1 of 1 Trauma Llamas will be put up for auction on OpenSea"
+      },
+      {
+        "title": "Gen 2 NFT",
+        "text": "The team behind Trauma Llamas start planning of Gen 2 NFTs"
+      },
+      {
+        "title": "Gen 2 Mobile Game",
+        "text": "Together with the Gen 2 NFT drop, we will plan development of a mobile game where you can play as a Gen 1 or Gen 2 Trauma Llama"
+      },
+      {
+        "title": "Llama raffle",
+        "text": "Anyone who minted between #3501-5000 are automatically entered into a free Trauma Llama raffle"
+      }
+    ]
+  }
+]

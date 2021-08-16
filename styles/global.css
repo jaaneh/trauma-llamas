@@ -1,0 +1,80 @@
+@tailwind base;
+
+@layer base {
+  html,
+  body,
+  #__next {
+    @apply h-full;
+  }
+
+  body {
+    font-family: 'IBM Plex Mono';
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply font-bold uppercase;
+  }
+
+  a {
+    @apply cursor-pointer;
+  }
+
+  a:hover {
+    @apply no-underline;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+.minter-input-primary:focus {
+  box-shadow: 0 0 0 2px #111827, 0 0 0 4px rgba(255, 255, 255, 0.5);
+}
+
+.minter-input-error:focus {
+  box-shadow: 0 0 0 2px #111827, 0 0 0 4px rgba(255, 87, 36, 1);
+}
+
+.nav_active_link {
+  @apply border-b-2 border-blue-400;
+}
+
+.roadmap_after::after {
+  @apply absolute md:left-1/2 w-[30px] h-[30px] bg-tl-yellow z-10 left-12;
+  content: '';
+  clip-path: circle(12px at center);
+  transform: translateX(-50%);
+}
+
+.llama-picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(25, 33, 49, 1);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
