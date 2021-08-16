@@ -17,12 +17,12 @@ const RoadmapPage = (): JSX.Element => {
             }`}
           >
             <div className='order-1 w-1/12 md:w-5/12'></div>
-            <div
-              className={`order-1 w-10/12 md:w-5/12 px-1 py-4 ${
-                i % 2 === 0 ? 'md:text-right text-left' : 'md:text-left'
-              }`}
-            >
-              <p className='mb-1 text-lg text-tl-yellow roadmap_after'>
+            <div className='order-1 w-10/12 px-1 py-4 text-left md:w-5/12'>
+              <p
+                className={`mb-1 text-lg text-tl-yellow roadmap_after ${
+                  i % 2 === 0 ? 'md:text-right text-left' : 'md:text-left'
+                }`}
+              >
                 {roadmapItem.percentage}
               </p>
 

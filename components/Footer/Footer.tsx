@@ -12,7 +12,7 @@ const Footer = (): JSX.Element => {
     <>
       {!isMintPage && (
         <div
-          className='min-h-[30vh] hero'
+          className='min-h-[200px] hero'
           style={{
             backgroundImage: 'url(banner.png)'
           }}

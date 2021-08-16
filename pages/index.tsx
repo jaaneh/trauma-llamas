@@ -10,7 +10,7 @@ const HomePage = (): JSX.Element => {
   return (
     <div className='flex flex-col items-center justify-center w-full'>
       <div
-        className='min-h-[50vh] hero'
+        className='min-h-[425px] hero'
         style={{
           backgroundImage: 'url(banner.png)'
         }}

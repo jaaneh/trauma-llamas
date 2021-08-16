@@ -6,12 +6,7 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import ActiveLink from '@components/ActiveLink'
 import Button from '@components/Button'
 
-type INav = {
-  title: string
-  href: string
-}
-
-const nav: INav[] = [
+const nav: Array<{ title: string; href: string }> = [
   {
     title: 'Home',
     href: '/'

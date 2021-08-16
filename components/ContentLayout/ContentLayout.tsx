@@ -8,14 +8,11 @@ type IContentLayout = {
 }
 
 const defaultUndertitle = 'Trauma Llamas'
-const defaultContent =
-  'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro odio tenetur voluptatem iste molestias eligendi esse illum fuga at doloribus similiquequas nam.'
 
 const ContentLayout = ({
   children,
   title,
-  undertitle = defaultUndertitle,
-  content = defaultContent
+  undertitle = defaultUndertitle
 }: IContentLayout): JSX.Element => {
   return (
     <div className='container flex flex-col items-center justify-center w-full max-w-6xl mx-auto my-6 bg-neutral-focus'>
@@ -24,7 +21,6 @@ const ContentLayout = ({
           <div className='flex flex-col items-center w-full px-8 mb-20 text-center md:max-w-3xl'>
             <h1 className='text-lg text-yellow-300 uppercase tracking-loose'>{title}</h1>
             <h2 className='mb-2 text-3xl leading-normal'>{undertitle}</h2>
-            <p className='mb-4 text-sm text-gray-50'>{content}</p>
           </div>
           <div className='w-full'>
             <div className='container w-full h-full mx-auto'>
