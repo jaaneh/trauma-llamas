@@ -12,7 +12,7 @@ import { initiateWeb3ProviderLibrary } from '@utils/minting.utils'
 
 import SEO from '../next-seo.config'
 
-function MyApp({ Component, pageProps }: AppProps) {
+const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <Web3ReactProvider getLibrary={initiateWeb3ProviderLibrary}>
       <DefaultSeo {...SEO} />

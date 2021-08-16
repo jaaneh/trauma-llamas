@@ -35,8 +35,8 @@ const Button = React.forwardRef<HTMLButtonElement, IButton>(
 
     const classNames = clsx(className, {
       [button_base]: true,
-      ['w-max']: !fullWidth,
-      ['w-full']: fullWidth,
+      // ['w-max']: !fullWidth,
+      // ['w-full']: fullWidth,
 
       [button_disabled]: isDisabled,
 
