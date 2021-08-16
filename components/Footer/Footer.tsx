@@ -2,7 +2,7 @@ import * as React from 'react'
 
 const Footer = (): JSX.Element => {
   return (
-    <footer className='flex h-24 mt-12 text-gray-300 border-t border-gray-700 bg-neutral-focus'>
+    <footer className='flex h-24 text-gray-300 border-t border-gray-700 bg-neutral-focus'>
       <div className='container flex items-center justify-between px-8 mx-auto text-sm'>
         <div>© {new Date().getFullYear()} Trauma Llamas</div>
 

@@ -84,13 +84,6 @@ const HomePage = (): JSX.Element => {
                   {/* <p className='text-sm text-gray-400'>{kit.content}</p> */}
                 </div>
               ))}
-              <div className='flex flex-col items-start col-span-2 md:col-span-1 md:items-center md:flex-row'>
-                <Link href='/'>
-                  <Button variant='primary' isActive className='w-full'>
-                    Adopt Llama
-                  </Button>
-                </Link>
-              </div>
             </div>
           </div>
         </section>
@@ -118,13 +111,35 @@ const HomePage = (): JSX.Element => {
                 to view our roadmap.
               </p>
             </div>
-            <Link href='/roadmap'>
-              <Button variant='primary' isActive className='w-full lg:w-max'>
-                View Roadmap
-              </Button>
-            </Link>
+            <div className='grid grid-cols-2 gap-4 mb-6 md:grid-cols-1 lg:grid-cols-3'>
+              <Link href='/roadmap'>
+                <Button
+                  variant='primary'
+                  isActive
+                  className='w-full col-span-2 md:col-span-1'
+                >
+                  View Roadmap
+                </Button>
+              </Link>
+            </div>
           </div>
         </section>
+      </div>
+
+      <div
+        className='min-h-[30vh] hero'
+        style={{
+          backgroundImage: 'url(banner.png)'
+        }}
+      >
+        <div className='bg-opacity-60 hero-overlay bg-gradient-to-b from-neutral-focus'></div>
+        <div className='hero-content'>
+          <Link href='/'>
+            <Button variant='secondary' isActive>
+              Mint Llamas
+            </Button>
+          </Link>
+        </div>
       </div>
     </div>
   )
