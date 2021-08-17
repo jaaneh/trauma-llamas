@@ -5,31 +5,27 @@
   },
   {
     "title": "When does the sale go live?",
-    "content": "<p>We have a provisional date in place, but this may change. Stay connected with us via <a href='https://twitter.com/TraumaLlamas' rel='noopener noreferrer' target='_blank'>Twitter</a> and <a href='/' rel='noopener noreferrer' target='_blank'>Discord</a> for further updates on launch date and time.</p>"
+    "content": "<p>We have a provisional date in place, but this may change. Stay connected with us via <a href='https://twitter.com/TraumaLlamas' rel='noopener' target='_blank'>Twitter</a> and <a href='https://discord.gg/hsvH3898Pq' rel='noopener' target='_blank'>Discord</a> for further updates on launch date and time.</p>"
   },
   {
     "title": "How do I purchase a Trauma Llama?",
-    "content": "<p>Purchasing a Trauma Llama is very simple.</p><p>1. Add the <a href='https://metamask.io/' rel='noopener noreferrer' target='_blank'>MetaMask extension</a> to your browser.</p><p>2. Buy Ethereum (ETH) on an exchange like Coinbase, Binance or FTX and transfer it to your MetaMask wallet.</p><p>3. Connect your MetaMask wallet to our website on the minting page.</p><p>4. Input the amount of Llamas you wish to purchase (max 10 per transaction), and click Mint Llamas. Approve the pop-up from MetaMask. Once the transaction has been sent, a link to view it on Etherscan will show up shortly after.</p>"
+    "content": "<p>Purchasing a Trauma Llama is very simple.</p><p>1. Add the <a href='https://metamask.io/' rel='noopener' target='_blank'>MetaMask extension</a> to your browser.</p><p>2. Buy Ethereum (ETH) on an exchange like Coinbase, Binance or FTX and transfer it to your MetaMask wallet.</p><p>3. Connect your MetaMask wallet to our website on the minting page.</p><p>4. Input the amount of Llamas you wish to purchase (max 10 per transaction), and click Mint Llamas. Approve the pop-up from MetaMask. Once the transaction has been sent, a link to view it on Etherscan will show up shortly after.</p>"
   },
   {
     "title": "How much will a Trauma Llama cost?",
-    "content": "<p>A Trauma Llama will cost 0.04 ETH + gas, and will remain that price throughout the minting perioud. It will be a fair distribution with no Bonding curves, tiers, or reservations.</p>"
+    "content": "<p>A Trauma Llama will cost 0.04 ETH + gas, and will remain that price throughout the minting period. It will be a fair distribution with no Bonding curves, tiers, or reservations.</p>"
   },
   {
     "title": "Where are the images stored?",
     "content": "<p>All images are hosted through IPFS with additional pinning through Pinata.</p>"
   },
   {
-    "title": "Why should I mint one?",
-    "content": "<p>Here's a list of some of the benefits of owning a Trauma Llama</p><p>1. </p><p>2. </p><p>3. </p><p>4. </p>"
-  },
-  {
     "title": "How many Trauma Llamas are there?",
-    "content": "<p>There will only ever be 8,888 Trauma Llamas minted. That's the max supply.</p>"
+    "content": "<p>There will only ever be 8,888 Trauma Llamas minted in Gen 1. That's the max supply.</p>"
   },
   {
     "title": "Will you host any giveaways?",
-    "content": "<p>Yes! The team will be minting 100 Trauma Llamas that will be used for giveaways through Twitter and Discord. Be sure to follow us to join any upcoming giveaways we host.</p>"
+    "content": "<p>Yes! We'll be minting 100 Trauma Llamas that will be used exclusively for giveaways through our <a href='https://twitter.com/TraumaLlamas' rel='noopener' target='_blank'>Twitter</a> and <a href='https://discord.gg/hsvH3898Pq' rel='noopener' target='_blank'>Discord</a>.</p><p>Make sure you follow us on <a href='https://twitter.com/TraumaLlamas' rel='noopener' target='_blank'>Twitter</a> and <a href='https://discord.gg/hsvH3898Pq' rel='noopener' target='_blank'>Discord</a> to be entered into any of our upcoming giveaways.</p>"
   },
   {
     "title": "What is Trauma Llamas Gen 2?",

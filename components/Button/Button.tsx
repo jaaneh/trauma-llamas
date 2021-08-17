@@ -48,7 +48,7 @@ const Button = React.forwardRef<HTMLButtonElement, IButton>(
     })
 
     if ('href' in props) {
-      return <a {...props} className={classNames} />
+      return <a {...props} rel='noopener' className={classNames} />
     } else {
       return <button {...(props as Button)} ref={ref} className={classNames} />
     }

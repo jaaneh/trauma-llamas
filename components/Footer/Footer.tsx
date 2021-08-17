@@ -1,5 +1,4 @@
 import * as React from 'react'
-// import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 import Button from '@components/Button'
@@ -19,13 +18,15 @@ const Footer = (): JSX.Element => {
         >
           <div className='bg-opacity-60 hero-overlay bg-gradient-to-b from-neutral-focus h-[30vh]'></div>
           <div className='hero-content'>
-            <div data-tip='Coming Soon' className='tooltip'>
-              {/* <Link href='/mint'> */}
-              <Button tabIndex={0} variant='secondary' isActive disabled>
-                Mint Llamas
-              </Button>
-              {/* </Link> */}
-            </div>
+            <Button
+              tabIndex={0}
+              variant='secondary'
+              isActive
+              href='https://discord.gg/hsvH3898Pq'
+              target='_blank'
+            >
+              Join Discord
+            </Button>
           </div>
         </div>
       )}

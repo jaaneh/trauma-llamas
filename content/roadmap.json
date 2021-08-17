@@ -4,15 +4,15 @@
     "content": [
       {
         "title": "100 Discord OG's",
-        "text": "First 100 members of our Discord server recieves an OG role, with access to future giveaways and more!"
+        "text": "<p>First 100 members of our Discord server recieves an OG role, with access to future giveaways and more!</p>"
       },
       {
-        "title": "Holder Discord role",
-        "text": "Anyone who holds a Trauma Llama will get access to custom Discord channels where we will hold future giveaways for Llama holders"
+        "title": "Holder Discord Role",
+        "text": "<p>Anyone who holds a Trauma Llama will get access to custom Discord channels where we will hold future giveaways for Llama holders.</p>"
       },
       {
-        "title": "Llama Merch",
-        "text": "We will open a public merch store for anyone to purchase desired wearables"
+        "title": "Club Member Merch",
+        "text": "<p>Member merch with the option to print the Trauma Llama you own on it.</p>"
       }
     ]
   },
@@ -21,15 +21,15 @@
     "content": [
       {
         "title": "Donation",
-        "text": "Donate $3,125 to NidderDale Llamas"
+        "text": "<p>Donate $3,125 to NidderDale Llamas.</p>"
       },
       {
         "title": "Donation",
-        "text": "Donate $3,125 to AFSP"
+        "text": "<p>Donate $3,125 to AFSP.</p>"
       },
       {
-        "title": "Llama raffle",
-        "text": "Anyone who minted between #1-2222 are automatically entered into a free Trauma Llama raffle"
+        "title": "Llama Raffle",
+        "text": "<p>Anyone who minted between #1-2222 are automatically entered into a free Trauma Llama raffle.</p>"
       }
     ]
   },
@@ -38,19 +38,19 @@
     "content": [
       {
         "title": "Donation",
-        "text": "Donate $3,125 to NidderDale Llamas"
+        "text": "<p>Donate $3,125 to NidderDale Llamas.</p>"
       },
       {
         "title": "Donation",
-        "text": "Donate $3,125 to AFSP"
+        "text": "<p>Donate $3,125 to AFSP.</p>"
       },
       {
-        "title": "Llama Gallery",
-        "text": "Start planning development of Trauma Llamas holder only area on our website. View all llamas currently in your wallet along with their traits and stats"
+        "title": "Club Member Area",
+        "text": "<p>Start planning the development of a Trauma Llamas holder only area on our website. View all of the Trauma Llamas currently in your wallet along with their traits and stats.</p>"
       },
       {
-        "title": "Llama raffle",
-        "text": "Anyone who minted between #2223-4444 are automatically entered into a free Trauma Llama raffle"
+        "title": "Llama Raffle",
+        "text": "<p>Anyone who minted between #2223-4444 are automatically entered into a free Trauma Llamas raffle.</p>"
       }
     ]
   },
@@ -59,27 +59,27 @@
     "content": [
       {
         "title": "Donation",
-        "text": "Donate $3,125 to NidderDale Llamas"
+        "text": "<p>Donate $3,125 to NidderDale Llamas.</p>"
       },
       {
         "title": "Donation",
-        "text": "Donate $3,125 to AFSP"
+        "text": "<p>Donate $3,125 to AFSP.</p>"
       },
       {
         "title": "$30k Community Wallet",
-        "text": "$30,000 is added to a community wallet. To be used for giveaways and other competitions. Stay tuned"
+        "text": "<p>$30,000 is added to a community wallet. This will be used for giveaways and other community member competitions. Stay tuned for more information!</p>"
       },
       {
         "title": "Liquidity Pool",
-        "text": "We will look at opening a liquidity pool for your Trauma Llamas on https://nft20.io/"
+        "text": "<p>We will look at opening a liquidity pool for your Trauma Llamas on <a href='https://nft20.io/' rel='noopener' target='_blank'>NFT20.io</a></p>"
       },
       {
         "title": "Llama Gallery",
-        "text": "Start planning development of an interactive and sortable gallery of all Trauma Llamas"
+        "text": "<p>Start planning development of an interactive and sortable gallery of all of the Trauma Llamas.</p>"
       },
       {
-        "title": "Llama raffle",
-        "text": "Anyone who minted between #4445-6666 are automatically entered into a free Trauma Llama raffle"
+        "title": "Llama Raffle",
+        "text": "<p>Anyone who minted between #4445-6666 are automatically entered into a free Trauma Llamas raffle.</p>"
       }
     ]
   },
@@ -88,27 +88,31 @@
     "content": [
       {
         "title": "Donation",
-        "text": "Donate $3,125 to NidderDale Llamas"
+        "text": "<p>Donate $3,125 to NidderDale Llamas.</p>"
       },
       {
         "title": "Donation",
-        "text": "Donate $3,125 to AFSP"
+        "text": "<p>Donate $3,125 to AFSP.</p>"
       },
       {
         "title": "1 of 1 auctions",
-        "text": "Special 1 of 1 Trauma Llamas will be put up for auction on OpenSea"
+        "text": "<p>Trauma Llamas special edition 1 of 1 NFT will be put up for auction on OpenSea.</p>"
       },
       {
         "title": "Gen 2 NFT",
-        "text": "The team behind Trauma Llamas start planning of Gen 2 NFTs"
+        "text": "<p>The team behind Trauma Llamas will start the development of Gen 2 NFTs.</p>"
       },
       {
         "title": "Gen 2 Mobile Game",
-        "text": "Together with the Gen 2 NFT drop, we will plan development of a mobile game where you can play as a Gen 1 or Gen 2 Trauma Llama"
+        "text": "<p>Together with the Gen 2 NFT drop, we will work on developing a mobile game where you can play as your Gen 1 or Gen 2 Trauma Llama.</p>"
+      },
+      {
+        "title": "Trauma Llama VTuber Model",
+        "text": "<p>We will commission a high quality Live 2D Trauma Llama vtuber model to be our official spokesperson.</p>"
       },
       {
         "title": "Llama raffle",
-        "text": "Anyone who minted between #6667-8888 are automatically entered into a free Trauma Llama raffle"
+        "text": "<p>Anyone who minted between #6667-8888 are automatically entered into a free Trauma Llamas raffle.</p>"
       }
     ]
   }

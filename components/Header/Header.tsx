@@ -54,13 +54,18 @@ const Header = () => {
           </nav>
 
           <div className='items-center justify-end hidden md:flex md:flex-1 lg:w-0'>
-            <div data-tip='Coming Soon' className='tooltip tooltip-bottom'>
-              {/* <Link href='/'> */}
-              <Button tabIndex={0} isActive disabled>
+            <Button
+              tabIndex={0}
+              isActive
+              href='https://discord.gg/hsvH3898Pq'
+              target='_blank'
+            >
+              Join Discord
+            </Button>
+            {/* <Link href='/'> */}
+            {/* <Button tabIndex={0} isActive disabled>
                 Mint Llamas
-              </Button>
-              {/* </Link> */}
-            </div>
+              </Button> */}
           </div>
         </div>
       </div>
@@ -106,13 +111,20 @@ const Header = () => {
                   ))}
                 </div>
                 <div>
-                  <div data-tip='Coming Soon' className='w-full tooltip'>
-                    {/* <Link href='/'> */}
-                    <Button tabIndex={0} isActive disabled className='w-full'>
+                  <Button
+                    tabIndex={0}
+                    className='w-full'
+                    isActive
+                    href='https://discord.gg/hsvH3898Pq'
+                    target='_blank'
+                  >
+                    Join Discord
+                  </Button>
+                  {/* <Link href='/'> */}
+                  {/* <Button tabIndex={0} isActive disabled className='w-full'>
                       Mint Llamas
-                    </Button>
-                    {/* </Link> */}
-                  </div>
+                    </Button> */}
+                  {/* </Link> */}
                 </div>
               </div>
             </div>

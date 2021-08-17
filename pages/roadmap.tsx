@@ -30,7 +30,10 @@ const RoadmapPage = (): JSX.Element => {
                 {roadmapItem.content.map((content, i) => (
                   <div key={i} className='p-4'>
                     <h4 className='mb-1 text-md '>{content.title}</h4>
-                    <p className='text-sm leading-snug text-gray-400'>{content.text}</p>
+                    <div
+                      className='text-sm leading-snug prose-sm text-gray-400'
+                      dangerouslySetInnerHTML={{ __html: content.text }}
+                    ></div>
                   </div>
                 ))}
               </div>
