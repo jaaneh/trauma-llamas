@@ -10,7 +10,7 @@ import { useEagerConnect, useENSName } from '@hooks/minting.hooks'
 import { formatEtherscanLink, isSupportedChain } from '@utils/minting.utils'
 import Minter from '@components/Minter'
 
-import MetaMaskLogo from '../../public/image.metamask.png'
+import MetaMaskLogo from '../../public/metamask.png'
 
 const CONNECT_TEXT = 'Connect with MetaMask'
 const ONBOARD_TEXT = 'Click to install MetaMask!'

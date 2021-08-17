@@ -1,10 +1,23 @@
 import * as React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
+import { Cloudinary } from '@cloudinary/base'
 
 import FadeInWhenVisible from '@components/FadeInWhenVisible'
 import Button from '@components/Button'
 
 import welcomeKit from '@content/welcome_kit.json'
+
+const cld = new Cloudinary({
+  cloud: {
+    cloudName: 'trauma-llamas'
+  }
+})
+
+const HomeOne = cld.video('home_1').toURL()
+const HomeThree = cld.video('home_3').toURL()
+
+import Llama from '../public/llama.png'
 
 const HomePage = (): JSX.Element => {
   return (
@@ -31,15 +44,23 @@ const HomePage = (): JSX.Element => {
       >
         <FadeInWhenVisible>
           <section className='flex flex-col w-full px-8 md:flex-row min-h-[50vh]'>
-            <figure className='w-full mb-6 md:mb-0 h-72 md:min-h-[50vh] overflow-hidden md:order-1 md:mr-12'>
-              <img
-                src='home1.gif'
-                alt='Llama'
+            <figure className='w-full mb-6 md:mb-0 h-72 md:min-h-[50vh] overflow-hidden md:order-1 md:mr-12 relative'>
+              <video
+                src={HomeOne}
+                loop={true}
+                autoPlay={true}
+                muted={true}
                 className='object-cover object-center w-full h-full rounded-lg'
               />
+              {/* <Image
+                src={HomeOne}
+                alt='Llama'
+                layout='fill'
+                className='object-cover object-center w-full h-full rounded-lg'
+              /> */}
             </figure>
             <div className='w-full md:order-2'>
-              <h2 className='mb-2 text-4xl font-bold'>Trauma Llamas</h2>
+              <h1 className='mb-2 text-4xl font-bold'>Trauma Llamas</h1>
               <div className='text-lg tracking-tight prose-sm text-gray-400'>
                 <p>Welcome to Trauma Llamas Rescue.</p>
                 <p>
@@ -63,11 +84,12 @@ const HomePage = (): JSX.Element => {
             id='tlc'
             className='flex flex-col w-full px-8 md:flex-row min-h-[50vh]'
           >
-            <figure className='w-full mb-6 md:mb-0 h-72 md:min-h-[50vh] overflow-hidden md:order-2 md:ml-12'>
-              <img
-                src='home2.gif'
+            <figure className='relative w-full mb-6 md:mb-0 h-72 md:min-h-[50vh] overflow-hidden md:order-2 md:ml-12'>
+              <Image
+                src={Llama}
                 alt='Llama'
-                className='object-cover object-center w-full h-full rounded-lg md:object-left'
+                layout='fill'
+                className='object-cover object-center w-full h-full rounded-lg'
               />
             </figure>
             <div className='w-full md:order-1'>
@@ -104,12 +126,20 @@ const HomePage = (): JSX.Element => {
             id='thefuture'
             className='flex flex-col w-full px-8 md:flex-row min-h-[50vh]'
           >
-            <figure className='w-full mb-6 md:mb-0 h-72 md:min-h-[50vh] overflow-hidden md:order-1 md:mr-12'>
-              <img
-                src='llama_3.png'
-                alt='Llama'
+            <figure className='relative w-full mb-6 md:mb-0 h-72 md:min-h-[50vh] overflow-hidden md:order-1 md:mr-12'>
+              <video
+                src={HomeThree}
+                loop={true}
+                autoPlay={true}
+                muted={true}
                 className='object-cover object-center w-full h-full rounded-lg'
               />
+              {/* <Image
+                src={HomeTwo}
+                alt='Llama'
+                layout='fill'
+                className='object-cover object-center w-full h-full rounded-lg'
+              /> */}
             </figure>
             <div className='w-full md:order-2'>
               <h2 className='mb-2 text-4xl font-bold'>The Future</h2>
