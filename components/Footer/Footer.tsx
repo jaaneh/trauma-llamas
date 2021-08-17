@@ -20,7 +20,6 @@ const Footer = (): JSX.Element => {
           <div className='hero-content'>
             <Button
               tabIndex={0}
-              variant='secondary'
               isActive
               href='https://discord.gg/hsvH3898Pq'
               target='_blank'

@@ -33,7 +33,7 @@ const HomePage = (): JSX.Element => {
           <section className='flex flex-col w-full px-8 md:flex-row min-h-[50vh]'>
             <figure className='w-full mb-6 md:mb-0 h-72 md:min-h-[50vh] overflow-hidden md:order-1 md:mr-12'>
               <img
-                src='sad_llamas.gif'
+                src='home1.gif'
                 alt='Llama'
                 className='object-cover object-center w-full h-full rounded-lg'
               />
@@ -65,7 +65,7 @@ const HomePage = (): JSX.Element => {
           >
             <figure className='w-full mb-6 md:mb-0 h-72 md:min-h-[50vh] overflow-hidden md:order-2 md:ml-12'>
               <img
-                src='llama_2.png'
+                src='home2.gif'
                 alt='Llama'
                 className='object-cover object-center w-full h-full rounded-lg md:object-left'
               />
