@@ -1,7 +1,16 @@
 import * as React from 'react'
 import { useRouter } from 'next/router'
+import { Cloudinary } from '@cloudinary/base'
 
 import Button from '@components/Button'
+
+const cld = new Cloudinary({
+  cloud: {
+    cloudName: 'trauma-llamas'
+  }
+})
+
+const HeroBanner = cld.image('home_hero_banner').toURL()
 
 const Footer = (): JSX.Element => {
   const { pathname } = useRouter()
@@ -13,7 +22,7 @@ const Footer = (): JSX.Element => {
         <div
           className='min-h-[30vh] hero'
           style={{
-            backgroundImage: 'url(banner.png)'
+            backgroundImage: `url(${HeroBanner})`
           }}
         >
           <div className='bg-opacity-60 hero-overlay bg-gradient-to-b from-neutral-focus h-[30vh]'></div>

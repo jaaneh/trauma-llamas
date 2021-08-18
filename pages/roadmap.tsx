@@ -10,17 +10,26 @@ const RoadmapPage = (): JSX.Element => {
       <NextSeo title='Roadmap' />
       <ContentLayout title='Roadmap'>
         <>
-          <div className='absolute border-2 rounded-l-lg h-5/6 top-12 border-tl-yellow left-11 md:left-auto md:right-1/2 border-2-2'></div>
-          <div className='absolute border-2 rounded-r-lg h-5/6 top-12 border-tl-yellow left-12 md:left-1/2 border-2-2'></div>
+          <div className='absolute h-[97%] border-2 rounded-l-lg top-12 border-tl-yellow left-11 md:left-auto md:right-1/2 border-2-2'></div>
+          <div className='absolute h-[97%] border-2 rounded-r-lg top-12 border-tl-yellow left-12 md:left-1/2 border-2-2'></div>
           {roadmap.map((roadmapItem, i) => (
             <section
               key={i}
-              className={`flex justify-between w-full mb-8 ${
+              className={`relative flex justify-between w-full mb-8 ${
                 i % 2 === 0 ? 'items-center md:flex-row-reverse' : 'items-center'
               }`}
             >
+              <img
+                src='/stars.png'
+                alt='stars'
+                className={`absolute z-0 w-52 opacity-40 select-none pointer-events-none ${
+                  i % 2 === 0
+                    ? 'top-4 -left-6 rotate-[170deg]'
+                    : 'rotate-12 top-2 -right-7'
+                }`}
+              />
               <div className='order-1 w-1/12 md:w-5/12'></div>
-              <div className='order-1 w-10/12 px-1 py-4 text-left md:w-5/12'>
+              <div className='z-10 order-1 w-10/12 px-1 py-4 text-left md:w-5/12'>
                 <p
                   className={`mb-1 text-lg text-tl-yellow roadmap_after ${
                     i % 2 === 0 ? 'md:text-right text-left' : 'md:text-left'

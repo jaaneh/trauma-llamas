@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Peer Ulfstein",
+    "position": "Developer",
+    "picture": "peer.jpg",
+    "socials": [
+      {
+        "platform": "Twitter",
+        "url": "https://twitter.com/PeerUlfstein"
+      }
+    ]
+  },
+  {
+    "name": "Xavier Drake",
+    "position": "Marketing",
+    "picture": "xavier.jpg",
+    "socials": [
+      {
+        "platform": "Twitter",
+        "url": "https://twitter.com/XavierNFT"
+      }
+    ]
+  },
+  {
+    "name": "Benedict Porter",
+    "position": "Project Manager",
+    "picture": "benedict.jpg",
+    "socials": [
+      {
+        "platform": "Twitter",
+        "url": "https://twitter.com/BenedictPorter"
+      }
+    ]
+  },
+  {
+    "name": "Diane Lynch",
+    "position": "Artist",
+    "picture": "diane.jpg",
+    "socials": [
+      {
+        "platform": "Twitter",
+        "url": "https://twitter.com/DianeNFT"
+      }
+    ]
+  }
+]

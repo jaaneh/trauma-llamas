@@ -2,8 +2,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "build": "cross-env NODE_ENV=production next build",
+    "start": "cross-env NODE_ENV=production next start",
     "test": "jest",
     "test:watch": "jest --watch"
   },
@@ -16,8 +16,8 @@
     "@tailwindcss/typography": "^0.4.1",
     "@web3-react/core": "^6.1.9",
     "@web3-react/injected-connector": "^6.0.7",
-    "cloudinary-react": "^1.7.0",
     "clsx": "^1.1.1",
+    "cross-env": "^7.0.3",
     "daisyui": "^1.11.1",
     "date-fns": "^2.23.0",
     "ethers": "^5.4.4",
@@ -35,6 +35,7 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
     "@testing-library/user-event": "^13.2.1",
+    "@types/gtag.js": "^0.0.7",
     "@types/jest": "^27.0.0",
     "@types/jest-axe": "^3.5.2",
     "@types/node": "^16.6.0",

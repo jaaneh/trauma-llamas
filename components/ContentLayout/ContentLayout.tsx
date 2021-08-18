@@ -19,7 +19,9 @@ const ContentLayout = ({
       <section className='py-8'>
         <div className='flex flex-col items-center mx-auto my-8'>
           <div className='flex flex-col items-center w-full px-8 mb-20 text-center md:max-w-3xl'>
-            <h1 className='text-lg text-yellow-300 uppercase tracking-loose'>{title}</h1>
+            <h1 className='z-20 text-lg text-yellow-300 uppercase tracking-loose'>
+              {title}
+            </h1>
             <h2 className='mb-2 text-3xl leading-normal'>{undertitle}</h2>
           </div>
           <div className='w-full'>

@@ -62,10 +62,11 @@ const Header = () => {
             >
               Join Discord
             </Button>
-            {/* <Link href='/'> */}
-            {/* <Button tabIndex={0} isActive disabled>
+            {/* <Link href='/'>
+              <Button tabIndex={0} isActive disabled>
                 Mint Llamas
-              </Button> */}
+              </Button>
+            </Link> */}
           </div>
         </div>
       </div>
@@ -120,11 +121,11 @@ const Header = () => {
                   >
                     Join Discord
                   </Button>
-                  {/* <Link href='/'> */}
-                  {/* <Button tabIndex={0} isActive disabled className='w-full'>
+                  {/* <Link href='/'>
+                    <Button tabIndex={0} isActive disabled className='w-full'>
                       Mint Llamas
-                    </Button> */}
-                  {/* </Link> */}
+                    </Button>
+                  </Link> */}
                 </div>
               </div>
             </div>

@@ -16,6 +16,10 @@
     "content": "<p>A Trauma Llama will cost 0.04 ETH + gas, and will remain that price throughout the minting period. It will be a fair distribution with no Bonding curves, tiers, or reservations.</p>"
   },
   {
+    "title": "How many possible combinations are there?",
+    "content": "<p>Trauma Llamas are generated with 125 unique attributes over 9 categories, giving a possibility of <span class='text-gray-100 font-bolder'>4,586,400,000</span> different combinations! Each of the 8,888 Trauma Llamas will be unique 1-of-1s.</p>"
+  },
+  {
     "title": "Where are the images stored?",
     "content": "<p>All images are hosted through IPFS with additional pinning through Pinata.</p>"
   },

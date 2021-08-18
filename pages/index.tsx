@@ -5,9 +5,11 @@ import { NextSeo } from 'next-seo'
 import { Cloudinary } from '@cloudinary/base'
 
 import FadeInWhenVisible from '@components/FadeInWhenVisible'
+import StaffCard from '@components/StaffCard'
 import Button from '@components/Button'
 
 import welcomeKit from '@content/welcome_kit.json'
+import staff from '@content/staff.json'
 
 const cld = new Cloudinary({
   cloud: {
@@ -15,10 +17,10 @@ const cld = new Cloudinary({
   }
 })
 
-const HomeOne = cld.video('home_1').toURL()
-const HomeThree = cld.video('home_3').toURL()
-
-import Llama from '../public/llama.png'
+const HeroBanner = cld.image('home_hero_banner').toURL()
+const StarSkyLlama = cld.video('star_sky_llama').toURL()
+const CityLlama = cld.image('city_llama').toURL()
+const SeaLlama = cld.video('sea_llama').toURL()
 
 const HomePage = (): JSX.Element => {
   return (
@@ -28,47 +30,36 @@ const HomePage = (): JSX.Element => {
         <div
           className='min-h-[50vh] hero'
           style={{
-            backgroundImage: 'url(banner.png)'
+            backgroundImage: `url(${HeroBanner})`
           }}
         >
           <div className='bg-opacity-20 hero-overlay bg-gradient-to-t from-neutral-focus h-[50vh]'></div>
           <div className='text-center hero-content text-neutral-content'>
             <div className='max-w-md'>
               <h1 className='mb-4 text-5xl font-bold'>Trauma Llamas</h1>
-              <Button
-                href='#sadllamas'
-                variant='primary'
-                isActive
-                className='rounded-full'
-              >
+              <Button href='#llamas' variant='primary' isActive className='rounded-full'>
                 Learn More
               </Button>
             </div>
           </div>
         </div>
         <div
-          id='sadllamas'
+          id='llamas'
           className='container flex flex-col justify-center w-full py-20 space-y-20'
         >
           <FadeInWhenVisible>
             <section className='flex flex-col w-full px-8 md:flex-row min-h-[50vh]'>
               <figure className='w-full mb-6 md:mb-0 h-72 md:min-h-[50vh] overflow-hidden md:order-1 md:mr-12 relative'>
                 <video
-                  src={HomeOne}
+                  src={SeaLlama}
                   loop={true}
                   autoPlay={true}
                   muted={true}
                   className='object-cover object-center w-full h-full rounded-lg'
                 />
-                {/* <Image
-                src={HomeOne}
-                alt='Llama'
-                layout='fill'
-                className='object-cover object-center w-full h-full rounded-lg'
-              /> */}
               </figure>
               <div className='w-full md:order-2'>
-                <h1 className='mb-2 text-4xl font-bold'>Trauma Llamas</h1>
+                <h2 className='mb-2 text-4xl font-bold'>Trauma Llamas</h2>
                 <div className='text-lg tracking-tight prose-sm text-gray-400'>
                   <p>Welcome to Trauma Llamas Rescue.</p>
                   <p>
@@ -94,14 +85,14 @@ const HomePage = (): JSX.Element => {
             >
               <figure className='relative w-full mb-6 md:mb-0 h-72 md:min-h-[50vh] overflow-hidden md:order-2 md:ml-12'>
                 <Image
-                  src={Llama}
+                  src={CityLlama}
                   alt='Llama'
                   layout='fill'
                   className='object-cover object-center w-full h-full rounded-lg'
                 />
               </figure>
               <div className='w-full md:order-1'>
-                <h2 className='text-lg text-yellow-300 uppercase tracking-loose'>TLC</h2>
+                <h3 className='text-lg text-yellow-300 uppercase tracking-loose'>TLC</h3>
                 <h2 className='mb-2 text-4xl font-bold'>Trauma Llamas Club</h2>
                 <div className='mb-6 text-lg tracking-tight prose-sm text-gray-400'>
                   <p>
@@ -136,30 +127,34 @@ const HomePage = (): JSX.Element => {
             >
               <figure className='relative w-full mb-6 md:mb-0 h-72 md:min-h-[50vh] overflow-hidden md:order-1 md:mr-12'>
                 <video
-                  src={HomeThree}
+                  src={StarSkyLlama}
                   loop={true}
                   autoPlay={true}
                   muted={true}
                   className='object-cover object-center w-full h-full rounded-lg'
                 />
-                {/* <Image
-                src={HomeTwo}
-                alt='Llama'
-                layout='fill'
-                className='object-cover object-center w-full h-full rounded-lg'
-              /> */}
               </figure>
               <div className='w-full md:order-2'>
                 <h2 className='mb-2 text-4xl font-bold'>The Future</h2>
                 <div className='mb-6 text-lg tracking-tight prose-sm text-gray-400'>
                   <p>
                     Together we'll create a community that will make a positive change in
-                    the world. We’ll start by making donations to NidderDale Llamas and
-                    the American Foundation for Suicide Prevention in a combined total
-                    amount of $25,000. Additionally we will hold a Trauma Llamas Club vote
-                    where the club will vote on which 3 club members will receive $10,000
-                    ($30,000 in total) so they can develop and launch their own NFT
-                    project.
+                    the world. We’ll start by making donations to{' '}
+                    <a
+                      href='https://southeastllamarescue.org/'
+                      rel='noopener'
+                      target='_blank'
+                    >
+                      Southeast Llama Rescue
+                    </a>{' '}
+                    and the{' '}
+                    <a href='https://afsp.org/' rel='noopener' target='_blank'>
+                      American Foundation for Suicide Prevention
+                    </a>{' '}
+                    in a combined total amount of $25,000. Additionally we will hold a
+                    Trauma Llamas Club vote where the club will vote on which 3 club
+                    members will receive $10,000 ($30,000 in total) so they can develop
+                    and launch their own NFT project.
                   </p>
                   <p>
                     If you’d like to learn more about the rest of our plans then please
@@ -179,6 +174,21 @@ const HomePage = (): JSX.Element => {
                 </div>
               </div>
             </section>
+          </FadeInWhenVisible>
+        </div>
+        <div className='container flex items-center justify-center w-full px-8 pb-20'>
+          <FadeInWhenVisible>
+            <div className='w-full md:order-2'>
+              <h2 className='mb-2 text-4xl font-bold'>The Team</h2>
+              <div className='mb-6 text-lg tracking-tight prose-sm text-gray-400'>
+                <p>This is the team behind Trauma Llamas.</p>
+              </div>
+              <div className='grid w-full grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-4'>
+                {staff.map((person, i) => (
+                  <StaffCard key={i} {...person} />
+                ))}
+              </div>
+            </div>
           </FadeInWhenVisible>
         </div>
       </div>

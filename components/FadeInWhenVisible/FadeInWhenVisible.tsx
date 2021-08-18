@@ -26,6 +26,7 @@ const FadeInWhenVisible = ({ children }: IFadeIn): JSX.Element => {
         visible: { opacity: 1, y: 0 },
         hidden: { opacity: 0, y: 60 }
       }}
+      className='w-full'
     >
       {children}
     </motion.div>

@@ -7,7 +7,7 @@ module.exports = {
     autoPrerender: false
   },
   images: {
-    domains: []
+    domains: ['res.cloudinary.com']
   },
   eslint: {
     ignoreDuringBuilds: true
