@@ -54,6 +54,7 @@ const HomePage = (): JSX.Element => {
                   src={SeaLlama}
                   loop={true}
                   autoPlay={true}
+                  playsInline={true}
                   muted={true}
                   className='object-cover object-center w-full h-full rounded-lg'
                 />
@@ -130,6 +131,7 @@ const HomePage = (): JSX.Element => {
                   src={StarSkyLlama}
                   loop={true}
                   autoPlay={true}
+                  playsInline={true}
                   muted={true}
                   className='object-cover object-center w-full h-full rounded-lg'
                 />

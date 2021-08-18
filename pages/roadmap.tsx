@@ -22,16 +22,14 @@ const RoadmapPage = (): JSX.Element => {
               <img
                 src='/stars.png'
                 alt='stars'
-                className={`absolute z-0 w-52 opacity-40 select-none pointer-events-none ${
-                  i % 2 === 0
-                    ? 'top-4 -left-6 rotate-[170deg]'
-                    : 'rotate-12 top-2 -right-7'
+                className={`absolute z-0 w-52 opacity-40 select-none pointer-events-none rotate-12 top-2 -right-7 ${
+                  i % 2 === 0 ? 'md:top-4 md:-left-6 md:rotate-[170deg]' : ''
                 }`}
               />
               <div className='order-1 w-1/12 md:w-5/12'></div>
               <div className='z-10 order-1 w-10/12 px-1 py-4 text-left md:w-5/12'>
                 <p
-                  className={`mb-1 text-lg text-tl-yellow roadmap_after ${
+                  className={`mb-1 text-lg text-tl-yellow after:left-4 md:after:left-1/2 roadmap_after ${
                     i % 2 === 0 ? 'md:text-right text-left' : 'md:text-left'
                   }`}
                 >

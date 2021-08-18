@@ -48,7 +48,7 @@
 }
 
 .roadmap_after::after {
-  @apply absolute md:left-1/2 w-[30px] h-[30px] bg-tl-yellow z-10 left-12;
+  @apply absolute w-[30px] h-[30px] bg-tl-yellow z-10;
   content: '';
   clip-path: circle(12px at center);
   transform: translateX(-50%);
