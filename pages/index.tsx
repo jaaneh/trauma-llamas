@@ -61,7 +61,7 @@ const HomePage = (): JSX.Element => {
               </figure>
               <div className='w-full md:order-2'>
                 <h2 className='mb-2 text-4xl font-bold'>Trauma Llamas</h2>
-                <div className='text-lg tracking-tight prose-sm text-gray-400'>
+                <div className='text-lg tracking-tight prose-sm prose text-gray-400'>
                   <p>Welcome to Trauma Llamas Rescue.</p>
                   <p>
                     We have 8,888 1st generation rescued Trauma Llamas that are in need of
@@ -138,7 +138,7 @@ const HomePage = (): JSX.Element => {
               </figure>
               <div className='w-full md:order-2'>
                 <h2 className='mb-2 text-4xl font-bold'>The Future</h2>
-                <div className='mb-6 text-lg tracking-tight prose-sm text-gray-400'>
+                <div className='mb-6 text-lg tracking-tight prose-sm prose text-gray-400'>
                   <p>
                     Together we'll create a community that will make a positive change in
                     the world. We’ll start by making donations to{' '}
@@ -182,7 +182,7 @@ const HomePage = (): JSX.Element => {
           <FadeInWhenVisible>
             <div className='w-full md:order-2'>
               <h2 className='mb-2 text-4xl font-bold'>The Team</h2>
-              <div className='mb-6 text-lg tracking-tight prose-sm text-gray-400'>
+              <div className='mb-6 text-lg tracking-tight prose-sm prose text-gray-400'>
                 <p>This is the team behind Trauma Llamas.</p>
               </div>
               <div className='grid w-full grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-4'>

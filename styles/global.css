@@ -47,6 +47,10 @@
   @apply border-b-2 border-blue-400;
 }
 
+.terms_section-title {
+  @apply text-gray-200 !important;
+}
+
 .roadmap_after::after {
   @apply absolute w-[30px] h-[30px] bg-tl-yellow z-10;
   content: '';

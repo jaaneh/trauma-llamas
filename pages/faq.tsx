@@ -54,12 +54,13 @@ const FAQPage = (): JSX.Element => {
               tabIndex={0}
               className='max-w-full border shadow border-tl-divider collapse rounded-xl collapse-arrow'
             >
-              <div className='flex items-center pr-10 font-medium tracking-tight text-md collapse-title'>
+              <h3 className='flex items-center pr-10 font-medium tracking-tight normal-case text-md collapse-title'>
                 {question.title}
-              </div>
-              <div className='prose-sm collapse-content'>
-                <div dangerouslySetInnerHTML={{ __html: question.content }}></div>
-              </div>
+              </h3>
+              <div
+                className='prose-sm prose collapse-content'
+                dangerouslySetInnerHTML={{ __html: question.content }}
+              ></div>
             </motion.div>
           ))}
         </motion.section>

@@ -22,11 +22,9 @@ const ContentLayout = ({
             <h1 className='text-lg text-yellow-300 uppercase tracking-loose'>{title}</h1>
             <h2 className='mb-2 text-3xl leading-normal'>{undertitle}</h2>
           </div>
-          <div className='w-full'>
-            <div className='container w-full h-full mx-auto'>
-              <div className='relative h-full px-8 py-4 overflow-hidden wrap'>
-                {children}
-              </div>
+          <div className='container w-full h-full mx-auto'>
+            <div className='relative h-full px-8 py-4 overflow-hidden wrap'>
+              {children}
             </div>
           </div>
         </div>

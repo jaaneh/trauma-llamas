@@ -39,9 +39,9 @@ const RoadmapPage = (): JSX.Element => {
                 <div className='divide-y rounded-md shadow bg-tl-bg-secondary divide-tl-divider'>
                   {roadmapItem.content.map((content, i) => (
                     <div key={i} className='p-4'>
-                      <h4 className='mb-1 text-md '>{content.title}</h4>
+                      <h4 className='mb-1 text-md'>{content.title}</h4>
                       <div
-                        className='text-sm leading-snug prose-sm text-gray-400'
+                        className='text-sm leading-snug prose-sm prose'
                         dangerouslySetInnerHTML={{ __html: content.text }}
                       ></div>
                     </div>

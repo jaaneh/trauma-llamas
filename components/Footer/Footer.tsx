@@ -1,4 +1,5 @@
 import * as React from 'react'
+// import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { Cloudinary } from '@cloudinary/base'
 
@@ -38,10 +39,12 @@ const Footer = (): JSX.Element => {
           </div>
         </div>
       )}
-      <footer className='flex h-24 text-gray-300 border-t border-gray-700 bg-neutral-focus'>
-        <div className='container flex items-center justify-between px-8 mx-auto text-sm'>
+      <footer className='flex text-gray-300 border-t border-gray-700 h-36 sm:h-24 bg-neutral-focus'>
+        <div className='container flex flex-col items-center justify-center px-8 py-8 mx-auto space-y-4 text-sm sm:space-y-0 sm:justify-between sm:py-0 sm:flex-row'>
           <div>© {new Date().getFullYear()} Trauma Llamas</div>
-
+          {/* <div>
+            <Link href='/terms'>Terms</Link>
+          </div> */}
           <div className='flex items-center space-x-3'>
             <a href='https://twitter.com/TraumaLlamas' rel='noopener' target='_blank'>
               <svg
