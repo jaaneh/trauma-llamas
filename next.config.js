@@ -20,6 +20,11 @@ module.exports = {
         permanent: true
       },
       {
+        source: '/r/hsvH3898Pq',
+        destination: 'https://discord.gg/hsvH3898Pq',
+        permanent: true
+      },
+      {
         source: '/r/twitter',
         destination: 'https://twitter.com/traumallamas',
         permanent: true
