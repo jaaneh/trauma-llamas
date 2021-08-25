@@ -54,6 +54,7 @@ const FAQPage = (): JSX.Element => {
               tabIndex={0}
               className='max-w-full border shadow border-tl-divider collapse rounded-xl collapse-arrow'
             >
+              <input type='checkbox' />
               <h3 className='flex items-center pr-10 font-medium tracking-tight normal-case text-md collapse-title'>
                 {question.title}
               </h3>
