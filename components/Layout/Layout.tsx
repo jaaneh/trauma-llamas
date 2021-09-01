@@ -8,7 +8,7 @@ import Footer from '@components/Footer'
 import MintContext from '@context/MintContext'
 
 import ABI from '../../abi/TraumaLlamas.json'
-const LLAMA_CONTRACT = '0x55b72831997629fad47d8b0d5ce434ca992fdfc8'
+const LLAMA_CONTRACT = '0x665941141af82c949184c0471a4c3cb1c6ca60ac'
 
 type ILayout = {
   children: React.ReactNode
@@ -18,6 +18,7 @@ const Layout = ({ children }: ILayout): JSX.Element => {
   const { library } = useWeb3React<providers.Web3Provider>()
   const [contract, setContract] = React.useState<ethers.Contract>(null)
   const [saleIsActive, setSaleIsActive] = React.useState<boolean>(false)
+  const [isSoldOut, setIsSoldOut] = React.useState<boolean>(false)
   const [totalSupply, setTotalSupply] = React.useState<null | string>(null)
   const [maxLlamas, setMaxLlamas] = React.useState<null | string>(null)
 
@@ -25,7 +26,6 @@ const Layout = ({ children }: ILayout): JSX.Element => {
     if (library) {
       const contract = new ethers.Contract(LLAMA_CONTRACT, ABI, library.getSigner())
       setContract(contract)
-      console.log(contract)
     }
   }, [library])
 
@@ -33,11 +33,15 @@ const Layout = ({ children }: ILayout): JSX.Element => {
     refreshContractData()
   }, [contract])
 
-  const refreshContractData = () => {
+  const refreshContractData = async () => {
     if (contract && library) {
-      contract.totalSupply().then((v: BigNumberish) => setTotalSupply(v.toString()))
-      contract.MAX_LLAMAS().then((v: BigNumberish) => setMaxLlamas(v.toString()))
-      contract.saleIsActive().then((v: boolean) => setSaleIsActive(v))
+      await contract.totalSupply().then((v: BigNumberish) => setTotalSupply(v.toString()))
+      await contract.MAX_LLAMAS().then((v: BigNumberish) => setMaxLlamas(v.toString()))
+      await contract.presaleIsActive().then((v: boolean) => setSaleIsActive(v))
+
+      if (parseInt(totalSupply) >= parseInt(maxLlamas)) {
+        setIsSoldOut(true)
+      }
     }
   }
 
@@ -47,6 +51,7 @@ const Layout = ({ children }: ILayout): JSX.Element => {
         value={{
           library,
           contract,
+          isSoldOut,
           saleIsActive,
           totalSupply,
           maxLlamas,

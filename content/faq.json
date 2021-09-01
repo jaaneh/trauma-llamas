@@ -5,11 +5,15 @@
   },
   {
     "title": "When does the sale go live?",
-    "content": "<p>We have a provisional date in place for a late September launch, but this may change. Stay connected with us via <a href='https://twitter.com/TraumaLlamas' rel='noopener' target='_blank'>Twitter</a> and <a href='https://discord.gg/hsvH3898Pq' rel='noopener' target='_blank'>Discord</a> for further updates on launch date and time.</p>"
+    "content": "<p>Trauma Llamas main sale is set to go live September 21st at 4pm UTC.</p>"
+  },
+  {
+    "title": "Will you have a pre/early sale?",
+    "content": "<p>You guys voted on it, so yes! Trauma Llamas public early sale is set to go live September 7th at 4pm UTC.</p><p><em>A select amount of early supporters will get access to our early sale some hours earlier by getting whitelisted. Stay connected via <a href='https://twitter.com/TraumaLlamas' rel='noopener' target='_blank'>Twitter</a> and <a href='https://discord.gg/hsvH3898Pq' rel='noopener' target='_blank'>Discord</a> for more details on how to get whitelisted.</em></p>"
   },
   {
     "title": "How do I purchase a Trauma Llama?",
-    "content": "<p>Purchasing a Trauma Llama is very simple.</p><p>1. Add the <a href='https://metamask.io/' rel='noopener' target='_blank'>MetaMask extension</a> to your browser.</p><p>2. Buy Ethereum (ETH) on an exchange like Coinbase, Binance or FTX and transfer it to your MetaMask wallet.</p><p>3. Connect your MetaMask wallet to our website on the minting page.</p><p>4. Input the amount of Llamas you wish to purchase (max 10 per transaction), and click Mint Llamas. Approve the pop-up from MetaMask. Once the transaction has been sent, a link to view it on Etherscan will show up shortly after.</p>"
+    "content": "<p>Purchasing a Trauma Llama is very simple.</p><p>1. Add the <a href='https://metamask.io/' rel='noopener' target='_blank'>MetaMask extension</a> to your browser.</p><p>2. Buy Ethereum (ETH) on an exchange like Coinbase, Binance or FTX and transfer it to your MetaMask wallet.</p><p>3. Connect your MetaMask wallet to our website on the minting page.</p><p>4. Input the amount of Llamas you wish to purchase (max 20 per transaction), and click Mint Llamas. Approve the pop-up from MetaMask. Once the transaction has been sent, a link to view it on Etherscan will show up shortly after.</p>"
   },
   {
     "title": "How much will a Trauma Llama cost?",

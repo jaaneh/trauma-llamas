@@ -3,6 +3,7 @@ import { ContractTransaction, ContractReceipt, BigNumber } from 'ethers'
 
 import Button from '@components/Button'
 import { formatEtherscanLink } from '@utils/minting.utils'
+import { withCommas } from '@utils/withCommas'
 import MintContext from '@context/MintContext'
 
 const LLAMA_PRICE = 0.04
@@ -15,8 +16,15 @@ const Minter = (): JSX.Element => {
   const [isSubmitting, setIsSubmitting] = React.useState<boolean>(false)
   const [transactionTx, setTransactionTx] = React.useState<null | string>(null)
 
-  const { library, contract, saleIsActive, totalSupply, maxLlamas, refreshContractData } =
-    React.useContext(MintContext)
+  const {
+    library,
+    contract,
+    isSoldOut,
+    saleIsActive,
+    totalSupply,
+    maxLlamas,
+    refreshContractData
+  } = React.useContext(MintContext)
 
   React.useEffect(() => {
     setIsSubmitting(false)
@@ -25,7 +33,7 @@ const Minter = (): JSX.Element => {
   const mintLlama = async (e: React.FormEvent) => {
     e.preventDefault()
 
-    if (library && contract) {
+    if (library && contract && !isSoldOut) {
       setIsSubmitting(true)
       const gasPrice = await library.getGasPrice()
       const llamaPrice = await contract.llamaPrice()
@@ -93,13 +101,19 @@ const Minter = (): JSX.Element => {
             !saleIsActive || Number(numberToMint) === 0 ? false : mintLlama(e)
           }
           disabled={
-            amountError || isSubmitting || !saleIsActive || Number(numberToMint) === 0
+            amountError ||
+            isSubmitting ||
+            isSoldOut ||
+            !saleIsActive ||
+            Number(numberToMint) <= 0
           }
         >
           {isSubmitting ? (
             <span>Minting...</span>
           ) : !saleIsActive ? (
             <span>Minting Disabled</span>
+          ) : isSoldOut ? (
+            <span>SOLD OUT</span>
           ) : amountError ? (
             <span>Max 10 at a time</span>
           ) : (
@@ -115,8 +129,9 @@ const Minter = (): JSX.Element => {
         <div className='flex flex-col items-center'>
           <p>Total Minted</p>
           <p>
-            {totalSupply}/{maxLlamas}
+            {withCommas(totalSupply)}/{withCommas(maxLlamas)}
           </p>
+          <p className='pt-2 text-xs text-gray-500'>Early sale is limited to 1,111</p>
         </div>
       )}
       {transactionTx && (
