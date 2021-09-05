@@ -20,10 +20,10 @@ module.exports = {
         }
       },
       animation: {
-        float: 'float 3s ease-in-out infinite'
+        float: 'float 4s ease-in-out infinite'
       },
       typography: theme => ({
-        sm: {
+        DEFAULT: {
           css: {
             color: theme('colors.gray.400'),
             maxWidth: 'none',
@@ -33,8 +33,11 @@ module.exports = {
               '&:hover': {
                 textDecoration: 'underline'
               }
-            },
-
+            }
+          }
+        },
+        sm: {
+          css: {
             h1: {
               color: theme('colors.yellow.300'),
               '&:hover': {

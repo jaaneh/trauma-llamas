@@ -13,7 +13,7 @@ import Minter from '@components/Minter'
 import MetaMaskLogo from '../../public/metamask.png'
 
 const CONNECT_TEXT = 'Connect with MetaMask'
-const ONBOARD_TEXT = 'Click to install MetaMask!'
+const ONBOARD_TEXT = 'Click to install MetaMask'
 
 const MetaMaskConnect = (): JSX.Element => {
   const router = useRouter()
@@ -60,7 +60,7 @@ const MetaMaskConnect = (): JSX.Element => {
 
     return (
       <section className='flex flex-col items-center justify-center h-full my-16 text-center'>
-        <span className='mb-8'>
+        <span className='mb-8 animate-float'>
           <Image
             width='150'
             height='150'

@@ -1,6 +1,8 @@
 import * as React from 'react'
 import { ContractTransaction, ContractReceipt, BigNumber } from 'ethers'
 
+import toast from 'react-hot-toast'
+
 import Button from '@components/Button'
 import { formatEtherscanLink } from '@utils/minting.utils'
 import { withCommas } from '@utils/withCommas'
@@ -10,11 +12,12 @@ const LLAMA_PRICE = 0.04
 const NETWORK_ID = 4
 
 const Minter = (): JSX.Element => {
-  const [numberToMint, setNumberToMint] = React.useState<string>('1')
-  const [totalMintPrice, setTotalMintPrice] = React.useState<number>(LLAMA_PRICE)
+  const [numberToMint, setNumberToMint] = React.useState<string>('5')
+  const [totalMintPrice, setTotalMintPrice] = React.useState<number>(
+    LLAMA_PRICE * Number(numberToMint)
+  )
   const [amountError, setAmountError] = React.useState<boolean>(false)
   const [isSubmitting, setIsSubmitting] = React.useState<boolean>(false)
-  const [transactionTx, setTransactionTx] = React.useState<null | string>(null)
 
   const {
     library,
@@ -39,20 +42,39 @@ const Minter = (): JSX.Element => {
       const llamaPrice = await contract.llamaPrice()
 
       await contract
-        .mintLlamas(numberToMint, {
+        .mintWhitelist(numberToMint, {
           value: BigNumber.from(llamaPrice).mul(numberToMint),
           nonce: library.getSigner().getTransactionCount(),
           gasPrice
         })
         .then(async (transaction: ContractTransaction) => {
           const txReceipt: ContractReceipt = await transaction.wait()
-          console.log(txReceipt)
-          setTransactionTx(txReceipt.transactionHash)
-          setIsSubmitting(false)
 
+          toast(() => (
+            <div className='flex flex-row items-center w-full'>
+              <span className='mr-3'>Success</span>
+              <a
+                className='btn btn-sm btn-secondary'
+                href={formatEtherscanLink('tx', [NETWORK_ID, txReceipt.transactionHash])}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                View transaction
+              </a>
+            </div>
+          ))
+
+          setIsSubmitting(false)
           refreshContractData()
         })
-        .catch(() => {
+        .catch((err: any) => {
+          if (err.message && !err.error) {
+            toast.error(err.message.toString())
+          } else if (err.error) {
+            toast.error(err.error.message.toString())
+          } else {
+            toast.error('Something went wrong.')
+          }
           setIsSubmitting(false)
           refreshContractData()
         })
@@ -132,21 +154,6 @@ const Minter = (): JSX.Element => {
             {withCommas(totalSupply)}/{withCommas(maxLlamas)}
           </p>
           <p className='pt-2 text-xs text-gray-500'>Early sale is limited to 1,111</p>
-        </div>
-      )}
-      {transactionTx && (
-        <div className='flex justify-center my-4'>
-          <div className='flex-none'>
-            <a
-              className='btn btn-sm btn-primary'
-              href={formatEtherscanLink('tx', [NETWORK_ID, transactionTx])}
-              target='_blank'
-              rel='noopener noreferrer'
-              onClick={() => setTransactionTx(null)}
-            >
-              View transaction
-            </a>
-          </div>
         </div>
       )}
     </section>

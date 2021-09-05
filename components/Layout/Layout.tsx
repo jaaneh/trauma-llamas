@@ -8,7 +8,7 @@ import Footer from '@components/Footer'
 import MintContext from '@context/MintContext'
 
 import ABI from '../../abi/TraumaLlamas.json'
-const LLAMA_CONTRACT = '0x665941141af82c949184c0471a4c3cb1c6ca60ac'
+const LLAMA_CONTRACT = '0x8b099dc616f3789b495c5cf05b804d64e85e44a3'
 
 type ILayout = {
   children: React.ReactNode
@@ -33,15 +33,24 @@ const Layout = ({ children }: ILayout): JSX.Element => {
     refreshContractData()
   }, [contract])
 
+  React.useEffect(() => {
+    if (Number(totalSupply) >= Number(maxLlamas)) {
+      setIsSoldOut(true)
+    } else {
+      setIsSoldOut(false)
+    }
+  }, [totalSupply, maxLlamas])
+
   const refreshContractData = async () => {
     if (contract && library) {
       await contract.totalSupply().then((v: BigNumberish) => setTotalSupply(v.toString()))
-      await contract.MAX_LLAMAS().then((v: BigNumberish) => setMaxLlamas(v.toString()))
-      await contract.presaleIsActive().then((v: boolean) => setSaleIsActive(v))
+      // await contract
+      //   .PRESALE_LLAMAS()
+      //   .then((v: BigNumberish) => setMaxLlamas(v.toString()))
+      // await contract.presaleIsActive().then((v: boolean) => setSaleIsActive(v))
 
-      if (parseInt(totalSupply) >= parseInt(maxLlamas)) {
-        setIsSoldOut(true)
-      }
+      await contract.MAX_LLAMAS().then((v: BigNumberish) => setMaxLlamas(v.toString()))
+      await contract.saleIsActive().then((v: boolean) => setSaleIsActive(v))
     }
   }
 

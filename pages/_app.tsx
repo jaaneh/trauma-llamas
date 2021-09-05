@@ -7,6 +7,7 @@ import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
 import { Web3ReactProvider } from '@web3-react/core'
 import { DefaultSeo } from 'next-seo'
+import { Toaster } from 'react-hot-toast'
 
 import Layout from '@components/Layout'
 import { initiateWeb3ProviderLibrary } from '@utils/minting.utils'
@@ -33,6 +34,16 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
     <>
       <Web3ReactProvider getLibrary={initiateWeb3ProviderLibrary}>
         <DefaultSeo {...SEO} />
+        <Toaster
+          position='bottom-center'
+          toastOptions={{
+            style: {
+              fontSize: '0.875rem',
+              background: '#2c384c',
+              color: '#fff'
+            }
+          }}
+        />
         <Layout>
           <Component {...pageProps} />
         </Layout>

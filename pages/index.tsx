@@ -7,6 +7,7 @@ import { Cloudinary } from '@cloudinary/base'
 import FadeInWhenVisible from '@components/FadeInWhenVisible'
 import StaffCard from '@components/StaffCard'
 import Button from '@components/Button'
+import Countdown from '@components/Countdown'
 
 import welcomeKit from '@content/welcome_kit.json'
 import staff from '@content/staff.json'
@@ -35,8 +36,9 @@ const HomePage = (): JSX.Element => {
         >
           <div className='bg-opacity-20 hero-overlay bg-gradient-to-t from-neutral-focus h-[50vh]'></div>
           <div className='text-center hero-content text-neutral-content'>
-            <div className='max-w-md'>
-              <h1 className='mb-4 text-5xl font-bold'>Trauma Llamas</h1>
+            <div className='max-w-md space-y-4'>
+              <h1 className='text-5xl font-bold'>Trauma Llamas</h1>
+              <Countdown />
               <Button href='#llamas' variant='primary' isActive className='rounded-full'>
                 Learn More
               </Button>

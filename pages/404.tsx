@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { useRouter } from 'next/router'
 
-const Custom404 = () => {
+const Custom404 = (): JSX.Element => {
   const router = useRouter()
 
   React.useEffect(() => {

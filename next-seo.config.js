@@ -3,6 +3,13 @@ module.exports = {
   defaultTitle: 'Trauma Llamas Club',
   description:
     'The Trauma Llamas Club is a collection of 8,888 custom ERC-721 NFTs minted on the Ethereum Blockchain. The NFT tokens are fairly distributed with no bonding curves, tiers, or reservations.',
+  additionalMetaTags: [
+    {
+      property: 'keywords',
+      content:
+        'trauma llamas, llamas, nft, ethereum, opensea collection, minting, mint, eth, trauma llamas club'
+    }
+  ],
   openGraph: {
     title: 'Trauma Llamas Club',
     description:

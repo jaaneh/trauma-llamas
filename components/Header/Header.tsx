@@ -18,10 +18,14 @@ const nav: Array<{ title: string; href: string }> = [
   {
     title: 'FAQ',
     href: '/faq'
+  },
+  {
+    title: 'Mint',
+    href: '/mint'
   }
 ]
 
-const Header = () => {
+const Header = (): JSX.Element => {
   return (
     <Popover className='border-b border-gray-700 rounded-b bg-neutral-focus text-neutral-content'>
       <div className='px-4 mx-auto max-w-7xl sm:px-6'>
