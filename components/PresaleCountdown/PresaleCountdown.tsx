@@ -3,9 +3,9 @@ import Countdown from '@components/Countdown'
 const MintCountdown = (): JSX.Element => {
   return (
     <div className='flex flex-col items-center justify-center pt-24 pb-8'>
-      <h1 className='mb-4 text-2xl'>Closed Presale</h1>
+      <h1 className='mb-2 text-2xl'>Closed Presale</h1>
       <Countdown size='xlarge' />
-      <h2 className='mt-8 mb-2 text-lg'>Open Presale</h2>
+      <h2 className='mt-8 mb-1 text-lg'>Open Presale</h2>
       <Countdown isOpenSale={true} />
       <section className='max-w-xl px-4 mt-10 text-sm'>
         <div className='prose-sm prose'>

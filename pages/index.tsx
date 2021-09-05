@@ -39,7 +39,7 @@ const HomePage = (): JSX.Element => {
             <div className='max-w-md space-y-4'>
               <h1 className='text-5xl font-bold'>Trauma Llamas</h1>
               <Countdown />
-              <Button href='#llamas' variant='primary' isActive className='rounded-full'>
+              <Button href='/mint' variant='primary' isActive className='rounded-full'>
                 Learn More
               </Button>
             </div>

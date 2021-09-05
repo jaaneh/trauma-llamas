@@ -30,12 +30,10 @@ const calculateCountdownFromNow = (nextDate: string) => {
 }
 
 const Countdown = ({ size = 'normal', isOpenSale = false }: ICountdown): JSX.Element => {
-  let countdownDate: string = ''
+  let countdownDate = 'Sep 7 2021 11:00:00 EDT'
 
   if (isOpenSale) {
     countdownDate = 'Sep 7 2021 12:00:00 EDT'
-  } else {
-    countdownDate = 'Sep 7 2021 11:00:00 EDT'
   }
 
   const [
@@ -58,34 +56,32 @@ const Countdown = ({ size = 'normal', isOpenSale = false }: ICountdown): JSX.Ele
   }, [expired])
 
   const countdown = [
-    { text: 'days', styles: { '--value': days } as React.CSSProperties },
-    { text: 'hours', styles: { '--value': hours } as React.CSSProperties },
-    { text: 'min', styles: { '--value': minutes } as React.CSSProperties },
-    { text: 'sec', styles: { '--value': seconds } as React.CSSProperties }
+    { text: 'days', value: days.toString().padStart(2, '0') },
+    { text: 'hours', value: hours.toString().padStart(2, '0') },
+    { text: 'min', value: minutes.toString().padStart(2, '0') },
+    { text: 'sec', value: seconds.toString().padStart(2, '0') }
   ]
 
-  const countdownWrapper = clsx('flex flex-col', {
-    'text-xs': size === 'small',
-    'text-sm': size === 'normal',
-    'text-base': size === 'large',
-    'text-lg': size === 'xlarge'
-  })
-
-  const countdownText = clsx('font-mono countdown', {
+  const countdownValue = clsx('leading-none uppercase', {
     'text-2xl': size === 'small',
     'text-3xl': size === 'normal',
     'text-4xl': size === 'large',
     'text-5xl': size === 'xlarge'
   })
 
+  const countdownText = clsx('font-mono leading-none', {
+    'text-xs': size === 'small',
+    'text-sm': size === 'normal',
+    'text-base': size === 'large',
+    'text-lg': size === 'xlarge'
+  })
+
   return (
-    <div className='flex items-center justify-center gap-5 text-center auto-cols-max'>
+    <div className='flex items-center justify-center w-full text-center'>
       {countdown.map((cd, i) => (
-        <div className={countdownWrapper} key={i}>
-          <span className={countdownText}>
-            <span style={cd.styles}></span>
-          </span>
-          {cd.text}
+        <div className='p-2 mx-1 font-mono' key={i}>
+          <div className={countdownValue}>{cd.value}</div>
+          <div className={countdownText}>{cd.text}</div>
         </div>
       ))}
     </div>
