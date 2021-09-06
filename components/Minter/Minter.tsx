@@ -9,7 +9,7 @@ import { withCommas } from '@utils/withCommas'
 import MintContext from '@context/MintContext'
 
 const LLAMA_PRICE = 0.04
-const NETWORK_ID = 4
+const NETWORK_ID = 1
 
 const Minter = (): JSX.Element => {
   const [numberToMint, setNumberToMint] = React.useState<string>('5')
@@ -153,7 +153,9 @@ const Minter = (): JSX.Element => {
           <p>
             {withCommas(totalSupply)}/{withCommas(maxLlamas)}
           </p>
-          <p className='pt-2 text-xs text-gray-500'>Early sale is limited to 1,111</p>
+          <p className='mt-4 text-xs tracking-tight text-gray-400'>
+            Early sale is limited to 1,111
+          </p>
         </div>
       )}
     </section>

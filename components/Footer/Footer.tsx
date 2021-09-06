@@ -42,9 +42,6 @@ const Footer = (): JSX.Element => {
       <footer className='flex text-gray-300 border-t border-gray-700 h-36 sm:h-24 bg-neutral-focus'>
         <div className='container flex flex-col items-center justify-center px-8 py-8 mx-auto space-y-4 text-sm sm:space-y-0 sm:justify-between sm:py-0 sm:flex-row'>
           <div>© {new Date().getFullYear()} Trauma Llamas</div>
-          {/* <div>
-            <Link href='/terms'>Terms</Link>
-          </div> */}
           <div className='flex items-center space-x-3'>
             <a href='https://twitter.com/TraumaLlamas' rel='noopener' target='_blank'>
               <svg
@@ -71,7 +68,7 @@ const Footer = (): JSX.Element => {
                 </g>
               </svg>
             </a>
-            <a href='/'>
+            <a href='/' rel='noopener' target='_blank'>
               <svg
                 fill='currentColor'
                 viewBox='0 0 90 90'
@@ -85,7 +82,11 @@ const Footer = (): JSX.Element => {
               </svg>
             </a>
 
-            <a href='/'>
+            <a
+              href='https://etherscan.io/address/0xa8662057f00f584d4d2e01750821fb11627537f5'
+              rel='noopener'
+              target='_blank'
+            >
               <svg
                 fill='currentColor'
                 viewBox='0 0 293.78 293.67'

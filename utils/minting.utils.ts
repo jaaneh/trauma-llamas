@@ -18,7 +18,7 @@ export function isSupportedChain(chainId: number): chainId is ChainId {
 
 // If we want to support testnets..
 // supportedChainIds: [1, 3, 4, 5, 42]
-const supportedChainIds: Array<keyof typeof CHAIN_IDS> = [4]
+const supportedChainIds: Array<keyof typeof CHAIN_IDS> = [1]
 
 export const injectedConnector = new InjectedConnector({
   supportedChainIds

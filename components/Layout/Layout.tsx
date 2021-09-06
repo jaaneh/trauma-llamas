@@ -8,7 +8,7 @@ import Footer from '@components/Footer'
 import MintContext from '@context/MintContext'
 
 import ABI from '../../abi/TraumaLlamas.json'
-const LLAMA_CONTRACT = '0x8b099dc616f3789b495c5cf05b804d64e85e44a3'
+const LLAMA_CONTRACT = '0xa8662057f00f584d4d2e01750821fb11627537f5'
 
 type ILayout = {
   children: React.ReactNode
@@ -44,13 +44,10 @@ const Layout = ({ children }: ILayout): JSX.Element => {
   const refreshContractData = async () => {
     if (contract && library) {
       await contract.totalSupply().then((v: BigNumberish) => setTotalSupply(v.toString()))
-      // await contract
-      //   .PRESALE_LLAMAS()
-      //   .then((v: BigNumberish) => setMaxLlamas(v.toString()))
+      await contract.whitelistSaleIsActive().then((v: boolean) => setSaleIsActive(v))
       // await contract.presaleIsActive().then((v: boolean) => setSaleIsActive(v))
-
+      // await contract.saleIsActive().then((v: boolean) => setSaleIsActive(v))
       await contract.MAX_LLAMAS().then((v: BigNumberish) => setMaxLlamas(v.toString()))
-      await contract.saleIsActive().then((v: boolean) => setSaleIsActive(v))
     }
   }
 

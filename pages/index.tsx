@@ -19,9 +19,11 @@ const cld = new Cloudinary({
 })
 
 const HeroBanner = cld.image('home_hero_banner').toURL()
-const StarSkyLlama = cld.video('star_sky_llama').toURL()
+// const SeaLlama = cld.video('sea_llama').toURL()
+// const StarSkyLlama = cld.video('star_sky_llama').toURL()
+const SeaLlama = cld.image('sea_llama_img').toURL()
 const CityLlama = cld.image('city_llama').toURL()
-const SeaLlama = cld.video('sea_llama').toURL()
+const StarSkyLlama = cld.image('star_sky_llama_img').toURL()
 
 const HomePage = (): JSX.Element => {
   return (
@@ -51,13 +53,19 @@ const HomePage = (): JSX.Element => {
         >
           <FadeInWhenVisible>
             <section className='flex flex-col w-full px-8 md:flex-row min-h-[50vh]'>
-              <figure className='w-full mb-6 md:mb-0 h-72 md:min-h-[50vh] overflow-hidden md:order-1 md:mr-12 relative'>
-                <video
+              <figure className='relative w-full mb-6 md:mb-0 h-72 md:min-h-[50vh] overflow-hidden md:order-1 md:mr-12'>
+                {/* <video
                   src={SeaLlama}
                   loop={true}
                   autoPlay={true}
                   playsInline={true}
                   muted={true}
+                  className='object-cover object-center w-full h-full rounded-lg'
+                /> */}
+                <Image
+                  src={SeaLlama}
+                  alt='Llama'
+                  layout='fill'
                   className='object-cover object-center w-full h-full rounded-lg'
                 />
               </figure>
@@ -129,12 +137,18 @@ const HomePage = (): JSX.Element => {
               className='flex flex-col w-full px-8 md:flex-row min-h-[50vh]'
             >
               <figure className='relative w-full mb-6 md:mb-0 h-72 md:min-h-[50vh] overflow-hidden md:order-1 md:mr-12'>
-                <video
+                {/* <video
                   src={StarSkyLlama}
                   loop={true}
                   autoPlay={true}
                   playsInline={true}
                   muted={true}
+                  className='object-cover object-center w-full h-full rounded-lg'
+                /> */}
+                <Image
+                  src={StarSkyLlama}
+                  alt='Llama'
+                  layout='fill'
                   className='object-cover object-center w-full h-full rounded-lg'
                 />
               </figure>
