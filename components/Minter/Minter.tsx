@@ -12,7 +12,7 @@ const LLAMA_PRICE = 0.04
 const NETWORK_ID = 1
 
 const Minter = (): JSX.Element => {
-  const [numberToMint, setNumberToMint] = React.useState<string>('5')
+  const [numberToMint, setNumberToMint] = React.useState<string>('10')
   const [totalMintPrice, setTotalMintPrice] = React.useState<number>(
     LLAMA_PRICE * Number(numberToMint)
   )
@@ -153,9 +153,10 @@ const Minter = (): JSX.Element => {
           <p>
             {withCommas(totalSupply)}/{withCommas(maxLlamas)}
           </p>
-          <p className='mt-4 text-xs tracking-tight text-gray-400'>
-            Early sale is limited to 1,111
-          </p>
+          <div className='mt-4 space-y-1 text-xs tracking-tight text-center text-gray-400'>
+            <p>Early sale is limited to 1,111</p>
+            <p>The remaining 7,777 will be available September 21st</p>
+          </div>
         </div>
       )}
     </section>

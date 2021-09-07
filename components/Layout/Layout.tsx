@@ -47,7 +47,10 @@ const Layout = ({ children }: ILayout): JSX.Element => {
       await contract.whitelistSaleIsActive().then((v: boolean) => setSaleIsActive(v))
       // await contract.presaleIsActive().then((v: boolean) => setSaleIsActive(v))
       // await contract.saleIsActive().then((v: boolean) => setSaleIsActive(v))
-      await contract.MAX_LLAMAS().then((v: BigNumberish) => setMaxLlamas(v.toString()))
+      // await contract.MAX_LLAMAS().then((v: BigNumberish) => setMaxLlamas(v.toString()))
+      await contract
+        .PRESALE_LLAMAS()
+        .then((v: BigNumberish) => setMaxLlamas(v.toString()))
     }
   }
 

@@ -1,13 +1,13 @@
 import * as React from 'react'
 import { NextSeo } from 'next-seo'
 
-import PresaleCountdown from '@components/PresaleCountdown'
+import MetaMaskConnect from '@components/MetaMaskConnect'
 
 const MintPage = (): JSX.Element => {
   return (
     <>
       <NextSeo title='Mint' />
-      <PresaleCountdown />
+      <MetaMaskConnect />
     </>
   )
 }
