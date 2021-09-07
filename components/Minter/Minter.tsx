@@ -42,7 +42,7 @@ const Minter = (): JSX.Element => {
       const llamaPrice = await contract.llamaPrice()
 
       await contract
-        .mintWhitelist(numberToMint, {
+        .mintPresale(numberToMint, {
           value: BigNumber.from(llamaPrice).mul(numberToMint),
           nonce: library.getSigner().getTransactionCount(),
           gasPrice

@@ -44,8 +44,8 @@ const Layout = ({ children }: ILayout): JSX.Element => {
   const refreshContractData = async () => {
     if (contract && library) {
       await contract.totalSupply().then((v: BigNumberish) => setTotalSupply(v.toString()))
-      await contract.whitelistSaleIsActive().then((v: boolean) => setSaleIsActive(v))
-      // await contract.presaleIsActive().then((v: boolean) => setSaleIsActive(v))
+      // await contract.whitelistSaleIsActive().then((v: boolean) => setSaleIsActive(v))
+      await contract.presaleIsActive().then((v: boolean) => setSaleIsActive(v))
       // await contract.saleIsActive().then((v: boolean) => setSaleIsActive(v))
       // await contract.MAX_LLAMAS().then((v: BigNumberish) => setMaxLlamas(v.toString()))
       await contract
