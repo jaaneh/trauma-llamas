@@ -26,6 +26,13 @@ const nav: Array<{ title: string; href: string }> = [
 ]
 
 const Header = (): JSX.Element => {
+  // const Pulse = () => (
+  //   <span className='absolute top-0 right-0 flex w-3 h-3 '>
+  //     <span className='absolute inline-flex w-full h-full bg-yellow-400 rounded-full opacity-75 animate-ping'></span>
+  //     <span className='relative inline-flex w-3 h-3 bg-yellow-500 rounded-full'></span>
+  //   </span>
+  // )
+
   return (
     <Popover className='border-b border-gray-700 rounded-b bg-neutral-focus text-neutral-content'>
       <div className='px-4 mx-auto max-w-7xl sm:px-6'>

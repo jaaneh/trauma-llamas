@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
+import clsx from 'clsx'
 
 type IProps = {
   href: string
@@ -11,12 +12,16 @@ type IProps = {
 const ActiveLink = ({ children, onClick, href }: IProps): JSX.Element => {
   const router = useRouter()
 
+  const isCurrentRoute = router.pathname === href
+
+  const styles = clsx('relative', {
+    'text-yellow-200': isCurrentRoute,
+    'text-gray-200': !isCurrentRoute
+  })
+
   return (
     <Link href={href}>
-      <a
-        onClick={onClick}
-        className={router.pathname === href ? 'text-yellow-200' : 'text-gray-200'}
-      >
+      <a onClick={onClick} className={styles}>
         {children}
       </a>
     </Link>

@@ -3,7 +3,6 @@ import clsx from 'clsx'
 
 type ICountdown = {
   size?: 'small' | 'normal' | 'large' | 'xlarge'
-  isOpenSale?: boolean
 }
 
 const calculateCountdownFromNow = (nextDate: string) => {
@@ -29,12 +28,8 @@ const calculateCountdownFromNow = (nextDate: string) => {
   }
 }
 
-const Countdown = ({ size = 'normal', isOpenSale = false }: ICountdown): JSX.Element => {
-  let countdownDate = 'Sep 7 2021 11:00:00 EDT'
-
-  if (isOpenSale) {
-    countdownDate = 'Sep 7 2021 12:00:00 EDT'
-  }
+const Countdown = ({ size = 'normal' }: ICountdown): JSX.Element => {
+  let countdownDate = 'Sep 21 2021 12:00:00 EDT'
 
   const [
     {
