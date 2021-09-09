@@ -12,7 +12,7 @@ const MintCountdown = (): JSX.Element => {
           <p>
             The main sale takes place September 21st at 4pm UTC. This sale is open to
             everyone. The price will be <span className='font-bold'>0.04 ETH</span> + gas,
-            and limited to 20 Llamas per transaction..
+            and is limited to 20 Llamas per transaction..
           </p>
           <p className='mt-2'>
             Stay connected via{' '}
