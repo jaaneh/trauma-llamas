@@ -1,0 +1,680 @@
+{
+  "backgrounds": [
+    {
+      "image_path": "/attributes/background/BAY.png",
+      "title": "Bay",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/background/BEACH.png",
+      "title": "Beach",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/background/CITY.png",
+      "title": "City",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/background/DESERT.png",
+      "title": "Desert",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/background/FIELD.png",
+      "title": "Field",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/background/FOREST.png",
+      "title": "Forest",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/background/HEAVEN_OR_HELL.png",
+      "title": "Heaven or Hell",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/background/MOUNTAINS.png",
+      "title": "Mountains",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/background/SNOW.png",
+      "title": "Snow",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/background/SPACE.png",
+      "title": "Space",
+      "rarity": "??"
+    }
+  ],
+  "fur": [
+    {
+      "image_path": "/attributes/fur/ABYSS.png",
+      "title": "Abyss",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/fur/BEIGE.png",
+      "title": "Beige",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/fur/BROWN.png",
+      "title": "Brown",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/fur/DARK_GREY.png",
+      "title": "Dark Grey",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/fur/GOLD.png",
+      "title": "Gold",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/fur/GREY.png",
+      "title": "Grey",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/fur/RAINBOW.png",
+      "title": "Rainow",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/fur/TAN.png",
+      "title": "Tan",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/fur/WHITE.png",
+      "title": "White",
+      "rarity": "??"
+    }
+  ],
+  "fur_patterns": [
+    {
+      "image_path": "/attributes/fur_pattern/NONE.png",
+      "title": "None",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/fur_pattern/BLACK_SPLOTCHES.png",
+      "title": "Black Splotches",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/fur_pattern/BROWN_SPLOTCHES.png",
+      "title": "Brown Splotches",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/fur_pattern/BROWN_SPOTS.png",
+      "title": "Brown Spots",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/fur_pattern/GREY_SPLOTCHES.png",
+      "title": "Grey Splotches",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/fur_pattern/GREY_SPOTS.png",
+      "title": "Grey Spots",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/fur_pattern/ORANGE_SPOTS.png",
+      "title": "Orange Spots",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/fur_pattern/WHITE_SPLOTCHES.png",
+      "title": "White Splotches",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/fur_pattern/WHITE_SPOTS.png",
+      "title": "White Spots",
+      "rarity": "??"
+    }
+  ],
+  "clothing": [
+    {
+      "image_path": "/attributes/clothing/NONE.png",
+      "title": "None",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/clothing/AMMO_BELT.png",
+      "title": "Ammo Belt",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/clothing/ANGEL_WINGS.png",
+      "title": "Angel Wings",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/clothing/BLUE_BLANKET.png",
+      "title": "Blue Blanket",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/clothing/DRAGON_WINGS.png",
+      "title": "Dragon Wings",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/clothing/MINT_BLANKET.png",
+      "title": "Mint Blanket",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/clothing/MINT_SWEATER.png",
+      "title": "Mint Sweater",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/clothing/PURPLE_SWEATER.png",
+      "title": "Purple Sweater",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/clothing/BLUE_SWEATER.png",
+      "title": "Blue Sweater",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/clothing/RED_SWEATER.png",
+      "title": "Red Sweater",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/clothing/PINK_SWEATER.png",
+      "title": "Pink Sweater",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/clothing/TURQUOISE_SWEATER.png",
+      "title": "Turquoise Sweater",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/clothing/YELLOW_SWEATER.png",
+      "title": "Yellow Sweater",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/clothing/PINK_BLANKET.png",
+      "title": "Pink Blanket",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/clothing/PURPLE_BLANKET.png",
+      "title": "Purple Blanket",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/clothing/RED_BLANKET.png",
+      "title": "Red Blanket",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/clothing/SADDLE.png",
+      "title": "Saddle",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/clothing/TURQUOISE_BLANKET.png",
+      "title": "Turquoise Blanket",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/clothing/YELLOW_BLANKET.png",
+      "title": "Yellow Blanket",
+      "rarity": "??"
+    }
+  ],
+  "eyes": [
+    {
+      "image_path": "/attributes/eyes/BLUE.png",
+      "title": "Blue",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/eyes/DROWSY.png",
+      "title": "Drowsy",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/eyes/GOLD_LAZER.png",
+      "title": "Gold Lazer",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/eyes/GREEN.png",
+      "title": "Green",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/eyes/HAPPY.png",
+      "title": "Happy",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/eyes/PURPLE.png",
+      "title": "Purple",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/eyes/RED_LAZER.png",
+      "title": "Red Lazer",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/eyes/RED.png",
+      "title": "Red",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/eyes/SATISFIED.png",
+      "title": "Satisfied",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/eyes/WHITE_LAZER.png",
+      "title": "White Lazer",
+      "rarity": "??"
+    }
+  ],
+  "eye_objects": [
+    {
+      "image_path": "/attributes/eye_objects/NONE.png",
+      "title": "None",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/eye_objects/3D_GLASSES.png",
+      "title": "3D Glasses",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/eye_objects/BLACK_BLINDFOLD.png",
+      "title": "Black Blindfold",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/eye_objects/EYE_PATCH.png",
+      "title": "Eye Patch",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/eye_objects/MONOCLE.png",
+      "title": "Monocle",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/eye_objects/SHADES.png",
+      "title": "Shades",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/eye_objects/WHITE_BLINDFOLD.png",
+      "title": "White Blindfold",
+      "rarity": "??"
+    }
+  ],
+  "head": [
+    {
+      "image_path": "/attributes/head/NONE.png",
+      "title": "None",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/head/BLACK_CROWN.png",
+      "title": "Black Crown",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/head/BLUE_AFRO.png",
+      "title": "Blue Afro",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/head/BLUE_CURLS.png",
+      "title": "Blue Curls",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/head/BLUE_MOHAWK.png",
+      "title": "Blue Mohawk",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/head/BLUE_WITCH_HAT.png",
+      "title": "Blue Witch Hat",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/head/GOLD_CROWN.png",
+      "title": "Gold Crown",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/head/HALO.png",
+      "title": "Halo",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/head/HORNS.png",
+      "title": "Horns",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/head/MINT_AFRO.png",
+      "title": "Mint Afro",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/head/MINT_CURLS.png",
+      "title": "Mint Curls",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/head/MINT_MOHAWK.png",
+      "title": "Mint Mohawk",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/head/PIMP_HAT.png",
+      "title": "Pimp Hat",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/head/PINK_AFRO.png",
+      "title": "Pink Afro",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/head/PINK_CURLS.png",
+      "title": "Pink Curls",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/head/PINK_MOHAWK.png",
+      "title": "Pink Mohawk",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/head/PLASTIC_BUCKET.png",
+      "title": "Plastic Bucket",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/head/PROPELLER_HAT.png",
+      "title": "Propeller Hat",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/head/PURPLE_AFRO.png",
+      "title": "Purple Afro",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/head/PURPLE_CURLS.png",
+      "title": "Purple Curls",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/head/PURPLE_MOHAWK.png",
+      "title": "Purple Mohawk",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/head/PURPLE_WITCH_HAT.png",
+      "title": "Purple Witch Hat",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/head/RED_AFRO.png",
+      "title": "Red Afro",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/head/RED_CROWN.png",
+      "title": "Red Crown",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/head/RED_CURLS.png",
+      "title": "Red Curls",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/head/RED_MOHAWK.png",
+      "title": "Red Mohawk",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/head/STEEL_BUCKET.png",
+      "title": "Steel Bucket",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/head/TOP_HAT.png",
+      "title": "Top Hat",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/head/TRAFFIC_CONE.png",
+      "title": "Traffic Cone",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/head/TURQUOISE_AFRO.png",
+      "title": "Turquoise Afro",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/head/TURQUOISE_CURLS.png",
+      "title": "Turquoise Curls",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/head/TURQUOISE_MOHAWK.png",
+      "title": "Turquoise Mohawk",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/head/YELLOW_AFRO.png",
+      "title": "Yellow Afro",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/head/YELLOW_CURLS.png",
+      "title": "Yellow Curls",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/head/YELLOW_MOHAWK.png",
+      "title": "Yellow Mohawk",
+      "rarity": "??"
+    }
+  ],
+  "mouth": [
+    {
+      "image_path": "/attributes/mouth/NONE.png",
+      "title": "None",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/mouth/BUBBLEGUM.png",
+      "title": "Bubblegum",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/mouth/BUCK_TEETH.png",
+      "title": "Buck Teeth",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/mouth/CIGARETTE.png",
+      "title": "Cigarette",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/mouth/MOUSTACHE.png",
+      "title": "Moustache",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/mouth/OPEN_MOUTH.png",
+      "title": "Open Mouth",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/mouth/PIPE.png",
+      "title": "Pipe",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/mouth/TONGUE.png",
+      "title": "Tongue",
+      "rarity": "??"
+    }
+  ],
+  "neck": [
+    {
+      "image_path": "/attributes/neck/NONE.png",
+      "title": "None",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/neck/BLUE_BOW.png",
+      "title": "Blue Bow",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/neck/BLUE_SCARF.png",
+      "title": "Blue Scarf",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/neck/BLUE_TIE.png",
+      "title": "Blue Tie",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/neck/CLOCK_CHAIN.png",
+      "title": "Clock Chain",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/neck/CROSS_NECKLACE.png",
+      "title": "Cross Necklace",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/neck/GOLD_CHAIN.png",
+      "title": "Gold Chain",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/neck/MINT_BOW.png",
+      "title": "Mint Bow",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/neck/MINT_SCARF.png",
+      "title": "Mint Scarf",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/neck/MINT_TIE.png",
+      "title": "Mint Tie",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/neck/PINK_BOW.png",
+      "title": "Pink Bow",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/neck/PINK_SCARF.png",
+      "title": "Pink Scarf",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/neck/PINK_TIE.png",
+      "title": "Pink Tie",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/neck/PURPLE_BOW.png",
+      "title": "Purple Bow",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/neck/PURPLE_SCARF.png",
+      "title": "Purple Scarf",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/neck/PURPLE_TIE.png",
+      "title": "Purple Tie",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/neck/RED_BOW.png",
+      "title": "Red Bow",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/neck/RED_SCARF.png",
+      "title": "Red Scarf",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/neck/RED_TIE.png",
+      "title": "Red Tie",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/neck/TURQUOISE_BOW.png",
+      "title": "Turquoise Bow",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/neck/TURQUOISE_SCARF.png",
+      "title": "Turquoise Scarf",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/neck/TURQUOISE_TIE.png",
+      "title": "Turquoise Tie",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/neck/YELLOW_BOW.png",
+      "title": "Yellow Bow",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/neck/YELLOW_SCARF.png",
+      "title": "Yellow Scarf",
+      "rarity": "??"
+    },
+    {
+      "image_path": "/attributes/neck/YELLOW_TIE.png",
+      "title": "Yellow Tie",
+      "rarity": "??"
+    }
+  ]
+}

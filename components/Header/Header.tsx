@@ -16,6 +16,10 @@ const nav: Array<{ title: string; href: string }> = [
     href: '/roadmap'
   },
   {
+    title: 'Attributes',
+    href: '/attributes'
+  },
+  {
     title: 'FAQ',
     href: '/faq'
   },

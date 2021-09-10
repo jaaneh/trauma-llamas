@@ -4,6 +4,7 @@ type IContentLayout = {
   children: React.ReactNode
   title: string
   undertitle?: string
+  noPadding?: boolean
   content?: string
 }
 
@@ -12,6 +13,7 @@ const defaultUndertitle = 'Trauma Llamas'
 const ContentLayout = ({
   children,
   title,
+  noPadding = false,
   undertitle = defaultUndertitle
 }: IContentLayout): JSX.Element => {
   return (
@@ -23,7 +25,11 @@ const ContentLayout = ({
             <h2 className='mb-2 text-3xl leading-normal'>{undertitle}</h2>
           </div>
           <div className='container w-full h-full mx-auto'>
-            <div className='relative h-full px-8 py-4 overflow-hidden wrap'>
+            <div
+              className={`relative h-full py-4 overflow-hidden wrap ${
+                !noPadding && 'px-8'
+              }`}
+            >
               {children}
             </div>
           </div>
