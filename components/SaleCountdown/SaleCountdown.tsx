@@ -20,7 +20,7 @@ const MintCountdown = (): JSX.Element => {
               Twitter
             </a>{' '}
             and{' '}
-            <a href='https://discord.gg/hsvH3898Pq' rel='noopener' target='_blank'>
+            <a href='https://traumallamas.io/r/discord' rel='noopener' target='_blank'>
               Discord
             </a>{' '}
             for exclusive giveaways, previews and more!

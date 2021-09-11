@@ -16,12 +16,7 @@ module.exports = {
     return [
       {
         source: '/r/discord',
-        destination: 'https://discord.gg/hsvH3898Pq',
-        permanent: true
-      },
-      {
-        source: '/r/hsvH3898Pq',
-        destination: 'https://discord.gg/hsvH3898Pq',
+        destination: 'https://discord.gg/T2CQFpSBUE',
         permanent: true
       },
       {

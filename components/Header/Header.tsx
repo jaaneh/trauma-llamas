@@ -72,7 +72,7 @@ const Header = (): JSX.Element => {
             <Button
               tabIndex={0}
               isActive
-              href='https://discord.gg/hsvH3898Pq'
+              href='https://traumallamas.io/r/discord'
               target='_blank'
             >
               Join Discord
@@ -131,7 +131,7 @@ const Header = (): JSX.Element => {
                     tabIndex={0}
                     className='w-full'
                     isActive
-                    href='https://discord.gg/hsvH3898Pq'
+                    href='https://traumallamas.io/r/discord'
                     target='_blank'
                   >
                     Join Discord
