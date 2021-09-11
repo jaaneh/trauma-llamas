@@ -58,7 +58,7 @@ const all_attributes: IAttrs[] = [
 const AttributesPage = (): JSX.Element => {
   return (
     <>
-      <NextSeo title='Roadmap' />
+      <NextSeo title='Attributes' />
       <ContentLayout title='Attributes' noPadding={true}>
         <div className='container flex flex-col items-center justify-center w-screen px-8 space-y-24'>
           {all_attributes.map((attr, i) => (
