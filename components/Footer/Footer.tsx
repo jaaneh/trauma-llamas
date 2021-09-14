@@ -68,7 +68,11 @@ const Footer = (): JSX.Element => {
                 </g>
               </svg>
             </a>
-            <a href='/' rel='noopener' target='_blank'>
+            <a
+              href='https://opensea.io/collection/traumallamas'
+              rel='noopener'
+              target='_blank'
+            >
               <svg
                 fill='currentColor'
                 viewBox='0 0 90 90'
