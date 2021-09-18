@@ -42,7 +42,7 @@ const Minter = (): JSX.Element => {
       const llamaPrice = await contract.llamaPrice()
 
       await contract
-        .mintPresale(numberToMint, {
+        .mintLlamas(numberToMint, {
           value: BigNumber.from(llamaPrice).mul(numberToMint),
           nonce: library.getSigner().getTransactionCount(),
           gasPrice
@@ -153,10 +153,6 @@ const Minter = (): JSX.Element => {
           <p>
             {withCommas(totalSupply)}/{withCommas(maxLlamas)}
           </p>
-          <div className='mt-4 space-y-1 text-xs tracking-tight text-center text-gray-400'>
-            <p>Early sale is limited to 1,111</p>
-            <p>The remaining 7,777 will be available September 21st</p>
-          </div>
         </div>
       )}
     </section>
