@@ -12,7 +12,7 @@ const LLAMA_PRICE = 0.04
 const NETWORK_ID = 1
 
 const Minter = (): JSX.Element => {
-  const [numberToMint, setNumberToMint] = React.useState<string>('10')
+  const [numberToMint, setNumberToMint] = React.useState<string>('20')
   const [totalMintPrice, setTotalMintPrice] = React.useState<number>(
     LLAMA_PRICE * Number(numberToMint)
   )
@@ -93,7 +93,7 @@ const Minter = (): JSX.Element => {
             type='number'
             placeholder='Amount'
             min='1'
-            max='10'
+            max='20'
             pattern='[0-9]{0,2}'
             value={Number(numberToMint).toString()}
             onChange={e => {
@@ -101,7 +101,7 @@ const Minter = (): JSX.Element => {
 
               setNumberToMint(Number(mintAmount).toString())
               setTotalMintPrice(LLAMA_PRICE * mintAmount)
-              mintAmount > 10 ? setAmountError(true) : setAmountError(false)
+              mintAmount > 20 ? setAmountError(true) : setAmountError(false)
             }}
             className={`input placeholder-gray-500 text-gray-800 ${
               amountError || Number(numberToMint) === 0
@@ -111,7 +111,7 @@ const Minter = (): JSX.Element => {
           />
           <label className='label'>
             <span className='text-red-500 label-text-alt'>
-              {amountError ? 'Max 10 at a time' : null}
+              {amountError ? 'Max 20 at a time' : null}
             </span>
           </label>
         </div>
@@ -137,7 +137,7 @@ const Minter = (): JSX.Element => {
           ) : isSoldOut ? (
             <span>SOLD OUT</span>
           ) : amountError ? (
-            <span>Max 10 at a time</span>
+            <span>Max 20 at a time</span>
           ) : (
             <span>
               Mint Llamas <span className='font-sans font-bold'>Ξ</span>

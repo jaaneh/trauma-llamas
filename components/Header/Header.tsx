@@ -30,12 +30,12 @@ const nav: Array<{ title: string; href: string }> = [
 ]
 
 const Header = (): JSX.Element => {
-  // const Pulse = () => (
-  //   <span className='absolute top-0 right-0 flex w-3 h-3 '>
-  //     <span className='absolute inline-flex w-full h-full bg-yellow-400 rounded-full opacity-75 animate-ping'></span>
-  //     <span className='relative inline-flex w-3 h-3 bg-yellow-500 rounded-full'></span>
-  //   </span>
-  // )
+  const Pulse = () => (
+    <span className='absolute flex w-[0.55rem] h-[0.55rem] top-1 right-1'>
+      <span className='absolute inline-flex w-full h-full bg-[#ffea00] rounded-full opacity-75 animate-ping'></span>
+      <span className='relative inline-flex w-[0.55rem] h-[0.55rem] bg-[#bfff00] rounded-full'></span>
+    </span>
+  )
 
   return (
     <Popover className='border-b border-gray-700 rounded-b bg-neutral-focus text-neutral-content'>
@@ -60,6 +60,7 @@ const Header = (): JSX.Element => {
             <div className='flex items-stretch space-x-2'>
               {nav.map((link, i) => (
                 <ActiveLink key={i} href={link.href}>
+                  {link.href === '/mint' && <Pulse />}
                   <span className='font-normal btn btn-ghost btn-sm rounded-btn'>
                     {link.title}
                   </span>
